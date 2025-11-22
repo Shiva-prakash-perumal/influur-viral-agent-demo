@@ -1,0 +1,201 @@
+influencer_id,handle,platform,follower_count,avg_views,engagement_rate,country,language,category,content_style,cost_per_post,age_bracket
+1,@education0001,youtube,46733,21266,0.108,US,en,education,tutorials and how to,675.52,18-24
+2,@music0002,tiktok,45280,14849,0.0234,ES,es,music,high energy dance,162.82,18-24
+3,@beauty0003,youtube,68323,36082,0.1186,FR,fr,beauty,reaction content,353.23,35-44
+4,@beauty0004,instagram,20259,5246,0.0667,BR,pt,beauty,storytelling vlogs,80.36,25-34
+5,@education0005,instagram,23685,13198,0.0302,DE,de,education,reaction content,182.07,35-44
+6,@comedy0006,youtube,16168,6688,0.1205,ES,es,comedy,storytelling vlogs,231.11,35-44
+7,@fitness0007,tiktok,807334,202364,0.0681,DE,de,fitness,tutorials and how to,2283.72,25-34
+8,@comedy0008,instagram,400331,73919,0.0801,FR,fr,comedy,product reviews,968.22,18-24
+9,@education0009,youtube,48656,3291,0.061,FR,fr,education,tutorials and how to,42.89,18-24
+10,@beauty0010,tiktok,153778,85039,0.0797,ES,es,beauty,product reviews,1100.95,25-34
+11,@education0011,tiktok,4937062,1331378,0.0485,FR,fr,education,skits and comedy,46499.88,25-34
+12,@fashion0012,youtube,28742,3966,0.1085,GB,en,fashion,high energy dance,90.79,18-24
+13,@comedy0013,instagram,3822426,215258,0.1137,GB,en,comedy,tutorials and how to,5478.6,35-44
+14,@fashion0014,youtube,21610,6247,0.079,DE,de,fashion,product reviews,209.99,25-34
+15,@comedy0015,youtube,78584,31545,0.0992,BR,pt,comedy,high energy dance,302.36,35-44
+16,@comedy0016,tiktok,11440,6417,0.1342,ES,es,comedy,tutorials and how to,192.19,25-34
+17,@beauty0017,instagram,18070,5733,0.029,MX,es,beauty,skits and comedy,159.48,18-24
+18,@comedy0018,tiktok,382843,146868,0.1454,MX,es,comedy,storytelling vlogs,4827.17,25-34
+19,@education0019,youtube,9670480,3940072,0.077,FR,fr,education,tutorials and how to,80878.94,25-34
+20,@music0020,tiktok,582004,102760,0.0486,MX,es,music,tutorials and how to,732.66,18-24
+21,@music0021,youtube,16314,2951,0.107,US,en,music,high energy dance,33.72,25-34
+22,@beauty0022,tiktok,2645397,409310,0.0326,FR,fr,beauty,lifestyle b roll,7339.56,25-34
+23,@fashion0023,instagram,1047354,619290,0.0328,GB,en,fashion,product reviews,10576.63,18-24
+24,@beauty0024,instagram,406309,51641,0.0439,DE,de,beauty,storytelling vlogs,974.92,18-24
+25,@music0025,tiktok,3221682,1878072,0.1404,GB,en,music,product reviews,57207.71,35-44
+26,@fitness0026,tiktok,5097163,716408,0.0203,GB,en,fitness,storytelling vlogs,11973.08,25-34
+27,@education0027,instagram,967417,307318,0.0447,BR,pt,education,product reviews,3543.69,35-44
+28,@education0028,tiktok,14139,4414,0.1395,ES,es,education,tutorials and how to,92.4,18-24
+29,@fashion0029,tiktok,609684,256900,0.0506,ES,es,fashion,storytelling vlogs,2208.47,18-24
+30,@comedy0030,youtube,937820,338435,0.0611,MX,es,comedy,high energy dance,4339.74,25-34
+31,@beauty0031,youtube,24696,10002,0.0794,FR,fr,beauty,tutorials and how to,328.77,25-34
+32,@comedy0032,tiktok,16587,2773,0.0545,US,es,comedy,skits and comedy,91.5,18-24
+33,@gaming0033,tiktok,3171282,1385682,0.0995,MX,es,gaming,storytelling vlogs,47968.14,25-34
+34,@education0034,youtube,79092,32812,0.1421,ES,es,education,lifestyle b roll,296.25,35-44
+35,@gaming0035,tiktok,42843,10221,0.1094,US,en,gaming,tutorials and how to,312.63,35-44
+36,@fashion0036,youtube,799564,404692,0.0257,GB,en,fashion,high energy dance,6073.09,18-24
+37,@beauty0037,tiktok,451898,128893,0.0213,FR,fr,beauty,product reviews,935.42,25-34
+38,@fashion0038,youtube,454543,130173,0.0254,MX,es,fashion,tutorials and how to,2074.9,35-44
+39,@education0039,tiktok,20341,9744,0.1349,BR,pt,education,storytelling vlogs,167.51,35-44
+40,@beauty0040,youtube,8484340,4207591,0.1346,FR,fr,beauty,lifestyle b roll,24166.68,18-24
+41,@fashion0041,youtube,2705502,532288,0.1224,BR,pt,fashion,product reviews,4387.58,35-44
+42,@beauty0042,tiktok,111937,56113,0.1333,DE,de,beauty,storytelling vlogs,655.83,25-34
+43,@gaming0043,youtube,7955496,1619092,0.1034,MX,es,gaming,tutorials and how to,27508.94,18-24
+44,@music0044,youtube,551784,326078,0.025,BR,pt,music,tutorials and how to,7466.25,18-24
+45,@fitness0045,instagram,22229,12108,0.0447,FR,fr,fitness,skits and comedy,76.66,35-44
+46,@gaming0046,instagram,7024630,3908672,0.101,US,en,gaming,reaction content,97332.28,18-24
+47,@comedy0047,tiktok,167949,45567,0.0584,FR,fr,comedy,tutorials and how to,401.84,35-44
+48,@education0048,instagram,702335,151368,0.0912,FR,fr,education,product reviews,758.68,18-24
+49,@fashion0049,instagram,920697,281497,0.0775,MX,es,fashion,skits and comedy,3212.17,35-44
+50,@education0050,instagram,351848,140076,0.0636,DE,de,education,high energy dance,4139.62,25-34
+51,@beauty0051,tiktok,27673,2087,0.1479,FR,fr,beauty,lifestyle b roll,48.71,18-24
+52,@education0052,tiktok,1429018,373242,0.072,GB,en,education,skits and comedy,3518.6,18-24
+53,@fashion0053,youtube,33702,19442,0.0873,US,en,fashion,reaction content,126.5,18-24
+54,@fitness0054,tiktok,1006313,597086,0.0974,DE,de,fitness,storytelling vlogs,20003.09,25-34
+55,@fashion0055,instagram,4916140,2256559,0.0817,ES,es,fashion,skits and comedy,28829.23,25-34
+56,@fashion0056,tiktok,284309,51626,0.0772,DE,de,fashion,lifestyle b roll,1363.25,35-44
+57,@gaming0057,tiktok,26008,4608,0.1102,BR,pt,gaming,skits and comedy,120.7,18-24
+58,@gaming0058,tiktok,176735,28941,0.0746,GB,en,gaming,skits and comedy,930.31,25-34
+59,@fashion0059,youtube,138402,7368,0.0657,FR,fr,fashion,lifestyle b roll,203.39,35-44
+60,@fitness0060,instagram,203005,13390,0.0637,ES,es,fitness,storytelling vlogs,339.76,25-34
+61,@fashion0061,instagram,8753181,3009063,0.1379,FR,fr,fashion,reaction content,68476.59,18-24
+62,@education0062,youtube,3986153,597727,0.0538,US,en,education,reaction content,8858.66,18-24
+63,@fashion0063,instagram,1803140,915198,0.0528,BR,pt,fashion,reaction content,6824.8,25-34
+64,@gaming0064,tiktok,16064,9261,0.0252,FR,fr,gaming,storytelling vlogs,54.93,35-44
+65,@comedy0065,tiktok,23914,10000,0.0933,MX,es,comedy,storytelling vlogs,115.39,18-24
+66,@beauty0066,youtube,7784025,3464642,0.1211,BR,pt,beauty,skits and comedy,34344.91,35-44
+67,@gaming0067,instagram,5297591,1358402,0.1424,US,en,gaming,skits and comedy,14874.36,35-44
+68,@music0068,youtube,3555328,1351829,0.0357,FR,fr,music,product reviews,46658.82,25-34
+69,@education0069,tiktok,329520,78319,0.1304,BR,pt,education,tutorials and how to,2323.72,18-24
+70,@education0070,tiktok,1324115,383355,0.1154,GB,en,education,lifestyle b roll,13020.35,25-34
+71,@fitness0071,instagram,598995,136132,0.0519,ES,es,fitness,reaction content,4497.62,35-44
+72,@fashion0072,instagram,677633,175130,0.0237,GB,en,fashion,reaction content,5346.47,35-44
+73,@gaming0073,tiktok,104958,56066,0.1112,GB,en,gaming,lifestyle b roll,745.01,25-34
+74,@music0074,tiktok,165685,58875,0.0512,ES,es,music,storytelling vlogs,1135.27,35-44
+75,@fashion0075,youtube,76332,20794,0.0516,GB,en,fashion,high energy dance,518.16,18-24
+76,@fitness0076,instagram,98259,42896,0.0552,GB,en,fitness,product reviews,538.01,35-44
+77,@gaming0077,tiktok,405127,190087,0.0441,FR,fr,gaming,high energy dance,2184.39,35-44
+78,@music0078,instagram,77399,19232,0.0593,BR,pt,music,lifestyle b roll,504.66,18-24
+79,@music0079,tiktok,1236665,147724,0.1329,BR,pt,music,skits and comedy,2914.06,25-34
+80,@fitness0080,tiktok,105224,61137,0.0528,ES,es,fitness,reaction content,1886.18,25-34
+81,@fitness0081,tiktok,538348,230169,0.0397,DE,de,fitness,reaction content,6751.84,18-24
+82,@music0082,instagram,659102,319603,0.0493,US,en,music,skits and comedy,6608.49,25-34
+83,@fashion0083,instagram,82440,32280,0.0993,GB,en,fashion,skits and comedy,878.1,25-34
+84,@gaming0084,tiktok,29591,4308,0.0298,FR,fr,gaming,product reviews,21.89,18-24
+85,@gaming0085,instagram,73166,15035,0.1317,FR,fr,gaming,high energy dance,107.28,18-24
+86,@fitness0086,tiktok,47252,6234,0.0545,BR,pt,fitness,high energy dance,57.77,35-44
+87,@comedy0087,tiktok,5801998,1691481,0.0809,MX,es,comedy,product reviews,23888.34,35-44
+88,@fitness0088,instagram,13169,3787,0.0619,BR,pt,fitness,high energy dance,47.38,35-44
+89,@fashion0089,tiktok,535477,251518,0.0428,MX,es,fashion,product reviews,5173.45,25-34
+90,@comedy0090,instagram,2771627,1615804,0.0811,BR,pt,comedy,reaction content,27873.33,35-44
+91,@fashion0091,instagram,171765,55395,0.1061,FR,fr,fashion,storytelling vlogs,942.47,25-34
+92,@music0092,youtube,93287,54442,0.0725,US,es,music,tutorials and how to,1112.68,25-34
+93,@fitness0093,tiktok,359184,140961,0.0848,FR,fr,fitness,high energy dance,2574.12,18-24
+94,@comedy0094,tiktok,206228,89510,0.0358,MX,es,comedy,storytelling vlogs,3060.74,25-34
+95,@education0095,youtube,449279,158927,0.0321,DE,de,education,storytelling vlogs,5525.53,25-34
+96,@education0096,tiktok,312699,138879,0.0862,GB,en,education,lifestyle b roll,1833.58,18-24
+97,@fitness0097,instagram,141500,78819,0.0861,GB,en,fitness,skits and comedy,2473.32,18-24
+98,@gaming0098,tiktok,63316,3255,0.1144,BR,pt,gaming,lifestyle b roll,98.05,35-44
+99,@fashion0099,youtube,412801,98997,0.0917,FR,fr,fashion,storytelling vlogs,2108.92,25-34
+100,@education0100,instagram,140900,73381,0.0734,BR,pt,education,storytelling vlogs,1067.35,35-44
+101,@fitness0101,instagram,8758997,2824170,0.0248,FR,fr,fitness,product reviews,56677.52,35-44
+102,@fashion0102,youtube,19912,10966,0.022,BR,pt,fashion,lifestyle b roll,102.25,25-34
+103,@fitness0103,youtube,103677,44683,0.1045,MX,es,fitness,lifestyle b roll,1365.2,25-34
+104,@gaming0104,youtube,4595323,1463018,0.0903,DE,de,gaming,product reviews,34415.72,35-44
+105,@beauty0105,tiktok,200407,20871,0.1024,FR,fr,beauty,product reviews,650.7,18-24
+106,@music0106,instagram,2445853,516936,0.0687,MX,es,music,high energy dance,4842.19,25-34
+107,@beauty0107,youtube,673713,175434,0.1088,GB,en,beauty,storytelling vlogs,3496.4,18-24
+108,@fitness0108,youtube,239172,99677,0.1369,MX,es,fitness,product reviews,1889.64,25-34
+109,@music0109,instagram,9182376,1969939,0.1451,FR,fr,music,reaction content,50645.96,25-34
+110,@beauty0110,instagram,20891,5426,0.0667,DE,de,beauty,reaction content,75.29,25-34
+111,@fashion0111,youtube,66594,24057,0.1092,BR,pt,fashion,product reviews,657.72,25-34
+112,@fashion0112,tiktok,662513,161505,0.1028,ES,es,fashion,tutorials and how to,3815.84,18-24
+113,@education0113,youtube,869004,191105,0.0773,DE,de,education,high energy dance,4278.31,35-44
+114,@gaming0114,youtube,176404,28301,0.1222,MX,es,gaming,tutorials and how to,885.65,35-44
+115,@fashion0115,instagram,5522641,3144057,0.1458,ES,es,fashion,storytelling vlogs,43558.53,25-34
+116,@fitness0116,instagram,1830014,318583,0.1079,DE,de,fitness,high energy dance,8038.55,18-24
+117,@music0117,instagram,11009,3799,0.0791,DE,de,music,lifestyle b roll,95.68,25-34
+118,@fashion0118,youtube,21136,3774,0.0233,BR,pt,fashion,product reviews,118.98,25-34
+119,@education0119,youtube,2961870,1629511,0.0593,BR,pt,education,high energy dance,28107.23,35-44
+120,@gaming0120,tiktok,19569,10527,0.0376,US,en,gaming,reaction content,195.9,18-24
+121,@comedy0121,youtube,29078,8089,0.0329,FR,fr,comedy,product reviews,159.19,35-44
+122,@education0122,instagram,213869,122505,0.1312,BR,pt,education,tutorials and how to,977.67,18-24
+123,@music0123,youtube,37104,4348,0.1302,BR,pt,music,reaction content,81.05,25-34
+124,@music0124,youtube,53790,6414,0.0934,MX,es,music,lifestyle b roll,45.27,25-34
+125,@fashion0125,youtube,96756,12690,0.1371,MX,es,fashion,lifestyle b roll,64.53,18-24
+126,@fashion0126,tiktok,961995,61739,0.0219,MX,es,fashion,storytelling vlogs,1771.88,18-24
+127,@music0127,tiktok,14361,6576,0.0884,ES,es,music,storytelling vlogs,179.98,25-34
+128,@comedy0128,instagram,226994,39009,0.1,GB,en,comedy,skits and comedy,1046.12,18-24
+129,@fitness0129,youtube,15222,4771,0.0722,ES,es,fitness,product reviews,122.06,18-24
+130,@music0130,instagram,668178,57546,0.0558,FR,fr,music,high energy dance,1380.66,25-34
+131,@fitness0131,youtube,76681,25155,0.0759,FR,fr,fitness,skits and comedy,724.28,35-44
+132,@fitness0132,tiktok,174357,88064,0.0718,DE,de,fitness,reaction content,2367.9,18-24
+133,@education0133,instagram,7257341,3104339,0.0817,GB,en,education,tutorials and how to,24017.48,25-34
+134,@music0134,tiktok,131202,15949,0.0278,US,es,music,product reviews,537.46,35-44
+135,@fitness0135,youtube,6658702,1881850,0.1391,BR,pt,fitness,tutorials and how to,12313.66,35-44
+136,@gaming0136,instagram,332841,44967,0.0827,ES,es,gaming,high energy dance,1367.82,35-44
+137,@music0137,instagram,527594,260616,0.1299,DE,de,music,lifestyle b roll,8922.55,25-34
+138,@comedy0138,youtube,63437,9466,0.1114,ES,es,comedy,product reviews,135.08,35-44
+139,@beauty0139,instagram,499992,135213,0.0384,BR,pt,beauty,lifestyle b roll,3244.46,18-24
+140,@fitness0140,tiktok,105362,26712,0.1138,US,en,fitness,reaction content,756.08,25-34
+141,@music0141,youtube,1833612,141865,0.0306,ES,es,music,storytelling vlogs,2595.19,18-24
+142,@fitness0142,instagram,1840049,207188,0.0759,GB,en,fitness,tutorials and how to,2796.5,18-24
+143,@comedy0143,youtube,13685,3659,0.0979,ES,es,comedy,product reviews,19.14,25-34
+144,@fashion0144,instagram,96464,5233,0.1171,MX,es,fashion,tutorials and how to,53.75,25-34
+145,@comedy0145,instagram,2621806,235022,0.132,ES,es,comedy,skits and comedy,1473.37,35-44
+146,@fashion0146,tiktok,194022,52857,0.1032,GB,en,fashion,tutorials and how to,723.37,35-44
+147,@beauty0147,instagram,240043,103046,0.067,US,es,beauty,lifestyle b roll,1865.27,35-44
+148,@comedy0148,tiktok,17216,9103,0.117,MX,es,comedy,reaction content,106.02,35-44
+149,@comedy0149,tiktok,5221174,1264340,0.1146,US,en,comedy,skits and comedy,37384.58,18-24
+150,@beauty0150,tiktok,33151,4444,0.1187,MX,es,beauty,tutorials and how to,32.27,18-24
+151,@fashion0151,youtube,222185,124042,0.0934,GB,en,fashion,skits and comedy,2984.32,35-44
+152,@beauty0152,youtube,255131,101353,0.1235,BR,pt,beauty,reaction content,2305.03,18-24
+153,@gaming0153,instagram,12966,3277,0.0573,ES,es,gaming,reaction content,79.76,25-34
+154,@fitness0154,tiktok,7289444,3326950,0.0253,ES,es,fitness,skits and comedy,107365.66,35-44
+155,@gaming0155,youtube,319228,184113,0.0786,FR,fr,gaming,skits and comedy,5399.85,25-34
+156,@comedy0156,instagram,13104,5755,0.1488,FR,fr,comedy,product reviews,119.26,18-24
+157,@gaming0157,youtube,168386,39756,0.0977,MX,es,gaming,tutorials and how to,1140.08,25-34
+158,@gaming0158,youtube,1084271,223664,0.1141,BR,pt,gaming,high energy dance,5523.81,35-44
+159,@gaming0159,youtube,979120,542638,0.0603,DE,de,gaming,high energy dance,13393.2,35-44
+160,@comedy0160,youtube,84868,21825,0.1229,GB,en,comedy,product reviews,641.56,18-24
+161,@education0161,youtube,335324,20128,0.0602,FR,fr,education,product reviews,674.99,25-34
+162,@beauty0162,instagram,29163,6202,0.1225,DE,de,beauty,storytelling vlogs,125.47,18-24
+163,@education0163,youtube,24725,6359,0.0411,DE,de,education,tutorials and how to,190.39,35-44
+164,@education0164,youtube,170834,72091,0.0509,DE,de,education,reaction content,1321.14,18-24
+165,@beauty0165,instagram,84801,41954,0.081,DE,de,beauty,skits and comedy,1260.86,18-24
+166,@fitness0166,instagram,2159593,705320,0.0744,FR,fr,fitness,lifestyle b roll,6955.69,25-34
+167,@fashion0167,tiktok,838565,445080,0.0921,DE,de,fashion,tutorials and how to,3595.22,18-24
+168,@gaming0168,youtube,65822,36065,0.0392,DE,de,gaming,high energy dance,653.65,18-24
+169,@gaming0169,tiktok,14446,4710,0.0507,DE,de,gaming,high energy dance,164.08,25-34
+170,@gaming0170,instagram,891008,432369,0.0379,MX,es,gaming,high energy dance,5882.98,35-44
+171,@fashion0171,instagram,221719,11726,0.0303,FR,fr,fashion,product reviews,148.66,25-34
+172,@music0172,tiktok,51632,6041,0.051,ES,es,music,lifestyle b roll,146.0,25-34
+173,@music0173,youtube,616903,36421,0.087,GB,en,music,lifestyle b roll,446.45,25-34
+174,@music0174,tiktok,52685,14705,0.1064,BR,pt,music,skits and comedy,111.29,25-34
+175,@fitness0175,instagram,13508,3549,0.0685,US,en,fitness,lifestyle b roll,97.31,25-34
+176,@gaming0176,instagram,936080,100174,0.0956,DE,de,gaming,storytelling vlogs,2774.86,35-44
+177,@comedy0177,tiktok,33517,16038,0.0804,US,es,comedy,tutorials and how to,414.77,35-44
+178,@music0178,youtube,12910,2076,0.1228,MX,es,music,product reviews,65.55,25-34
+179,@fashion0179,instagram,57536,26714,0.0448,BR,pt,fashion,skits and comedy,419.66,25-34
+180,@gaming0180,tiktok,204575,55237,0.0772,DE,de,gaming,high energy dance,1861.18,25-34
+181,@education0181,instagram,5928316,1989553,0.1241,MX,es,education,reaction content,53344.77,25-34
+182,@comedy0182,tiktok,20313,4679,0.0584,GB,en,comedy,tutorials and how to,85.99,25-34
+183,@education0183,youtube,219476,98708,0.1385,GB,en,education,reaction content,2314.26,25-34
+184,@music0184,instagram,165436,54957,0.1175,BR,pt,music,product reviews,538.56,35-44
+185,@music0185,tiktok,51048,20666,0.0671,MX,es,music,storytelling vlogs,691.98,18-24
+186,@education0186,tiktok,130629,61355,0.0946,ES,es,education,reaction content,1281.33,25-34
+187,@beauty0187,instagram,1610736,522642,0.0703,BR,pt,beauty,high energy dance,11419.82,18-24
+188,@education0188,instagram,9752036,2019327,0.1391,DE,de,education,reaction content,39853.45,18-24
+189,@fitness0189,tiktok,216438,21272,0.1087,MX,es,fitness,storytelling vlogs,645.94,35-44
+190,@education0190,instagram,423169,228609,0.1307,FR,fr,education,high energy dance,6024.82,35-44
+191,@fashion0191,youtube,47067,27855,0.123,FR,fr,fashion,tutorials and how to,337.1,35-44
+192,@comedy0192,instagram,252474,149125,0.0369,US,es,comedy,skits and comedy,4701.52,25-34
+193,@education0193,tiktok,377647,178642,0.127,BR,pt,education,product reviews,1288.46,25-34
+194,@fitness0194,instagram,356516,42990,0.1278,FR,fr,fitness,reaction content,925.97,35-44
+195,@fitness0195,youtube,3120128,1045106,0.0595,MX,es,fitness,skits and comedy,10303.71,18-24
+196,@comedy0196,youtube,56469,22547,0.0916,MX,es,comedy,tutorials and how to,197.4,18-24
+197,@comedy0197,instagram,596245,220226,0.0423,ES,es,comedy,product reviews,5226.93,18-24
+198,@fashion0198,youtube,17525,10019,0.1202,BR,pt,fashion,lifestyle b roll,129.64,18-24
+199,@comedy0199,tiktok,311970,123209,0.0577,DE,de,comedy,product reviews,4152.08,18-24
+200,@gaming0200,instagram,1163699,159361,0.074,MX,es,gaming,reaction content,3017.22,18-24
