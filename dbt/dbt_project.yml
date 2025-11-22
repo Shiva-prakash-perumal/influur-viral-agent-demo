@@ -1,0 +1,25 @@
+name: "influur_viral_agent"
+version: "1.0.0"
+config-version: 2
+
+profile: "influur_viral_agent"
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+analysis-paths: ["analyses"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+models:
+  influur_viral_agent:
+    +materialized: view
+    staging:
+      +schema: staging
+      +materialized: view
+    core:
+      +schema: core
+      +materialized: view
+    marts:
+      +schema: marts
+      +materialized: table

@@ -1,0 +1,1761 @@
+[0m14:33:18.855926 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a9ed10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106fa87d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106fa8e10>]}
+
+
+============================== 14:33:18.858383 | fa9f4e67-9079-4d93-8478-c1068b10cf9c ==============================
+[0m14:33:18.858383 [info ] [MainThread]: Running with dbt=1.7.19
+[0m14:33:18.858687 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/avi/Desktop/projects/influur-viral-agent-demo/dbt/logs', 'debug': 'False', 'profiles_dir': '/Users/avi/Desktop/projects/influur-viral-agent-demo/pipelines/../dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:33:18.983658 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fa9f4e67-9079-4d93-8478-c1068b10cf9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b94e50>]}
+[0m14:33:19.021036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fa9f4e67-9079-4d93-8478-c1068b10cf9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107489590>]}
+[0m14:33:19.021634 [info ] [MainThread]: Registered adapter: postgres=1.7.19
+[0m14:33:19.032107 [debug] [MainThread]: checksum: a8d43cdff37d0f32d7fbe4c5c25bea4bb6c86e162f8ce8fdb1a38cdcf7495431, vars: {}, profile: , target: , version: 1.7.19
+[0m14:33:19.032614 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:33:19.032840 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'fa9f4e67-9079-4d93-8478-c1068b10cf9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075456d0>]}
+[0m14:33:19.570759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fa9f4e67-9079-4d93-8478-c1068b10cf9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107bab390>]}
+[0m14:33:19.581185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fa9f4e67-9079-4d93-8478-c1068b10cf9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107eaa510>]}
+[0m14:33:19.581431 [info ] [MainThread]: Found 5 models, 4 tests, 2 sources, 0 exposures, 0 metrics, 415 macros, 0 groups, 0 semantic models
+[0m14:33:19.581625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fa9f4e67-9079-4d93-8478-c1068b10cf9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108015810>]}
+[0m14:33:19.582503 [info ] [MainThread]: 
+[0m14:33:19.582855 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m14:33:19.583451 [debug] [ThreadPool]: Acquiring new postgres connection 'list_influur_demo'
+[0m14:33:19.587621 [debug] [ThreadPool]: Using postgres connection "list_influur_demo"
+[0m14:33:19.587916 [debug] [ThreadPool]: On list_influur_demo: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "connection_name": "list_influur_demo"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m14:33:19.588121 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:33:19.753466 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m14:33:19.754353 [debug] [ThreadPool]: On list_influur_demo: Close
+[0m14:33:19.755783 [debug] [ThreadPool]: Using postgres connection "list_influur_demo"
+[0m14:33:19.755978 [debug] [ThreadPool]: On list_influur_demo: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "connection_name": "list_influur_demo"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m14:33:19.756118 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:33:19.822059 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m14:33:19.823049 [debug] [ThreadPool]: On list_influur_demo: Close
+[0m14:33:19.824467 [debug] [ThreadPool]: Using postgres connection "list_influur_demo"
+[0m14:33:19.824741 [debug] [ThreadPool]: On list_influur_demo: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "connection_name": "list_influur_demo"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m14:33:19.824929 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:33:19.836880 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m14:33:19.838080 [debug] [ThreadPool]: On list_influur_demo: Close
+[0m14:33:19.838769 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_influur_demo, now create_influur_demo_public_staging)
+[0m14:33:19.839135 [debug] [ThreadPool]: Creating schema "database: "influur_demo"
+schema: "public_staging"
+"
+[0m14:33:19.841640 [debug] [ThreadPool]: Using postgres connection "create_influur_demo_public_staging"
+[0m14:33:19.841815 [debug] [ThreadPool]: On create_influur_demo_public_staging: BEGIN
+[0m14:33:19.841957 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:33:19.850177 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m14:33:19.850369 [debug] [ThreadPool]: Using postgres connection "create_influur_demo_public_staging"
+[0m14:33:19.850526 [debug] [ThreadPool]: On create_influur_demo_public_staging: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "connection_name": "create_influur_demo_public_staging"} */
+create schema if not exists "public_staging"
+[0m14:33:19.854253 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.0 seconds
+[0m14:33:19.854688 [debug] [ThreadPool]: On create_influur_demo_public_staging: COMMIT
+[0m14:33:19.854839 [debug] [ThreadPool]: Using postgres connection "create_influur_demo_public_staging"
+[0m14:33:19.854978 [debug] [ThreadPool]: On create_influur_demo_public_staging: COMMIT
+[0m14:33:19.859049 [debug] [ThreadPool]: SQL status: COMMIT in 0.0 seconds
+[0m14:33:19.859233 [debug] [ThreadPool]: On create_influur_demo_public_staging: Close
+[0m14:33:19.859846 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_influur_demo_public_staging, now create_influur_demo_public_marts)
+[0m14:33:19.860165 [debug] [ThreadPool]: Creating schema "database: "influur_demo"
+schema: "public_marts"
+"
+[0m14:33:19.861193 [debug] [ThreadPool]: Using postgres connection "create_influur_demo_public_marts"
+[0m14:33:19.861339 [debug] [ThreadPool]: On create_influur_demo_public_marts: BEGIN
+[0m14:33:19.861469 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:33:19.870029 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m14:33:19.870225 [debug] [ThreadPool]: Using postgres connection "create_influur_demo_public_marts"
+[0m14:33:19.870377 [debug] [ThreadPool]: On create_influur_demo_public_marts: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "connection_name": "create_influur_demo_public_marts"} */
+create schema if not exists "public_marts"
+[0m14:33:19.870977 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.0 seconds
+[0m14:33:19.871548 [debug] [ThreadPool]: On create_influur_demo_public_marts: COMMIT
+[0m14:33:19.871725 [debug] [ThreadPool]: Using postgres connection "create_influur_demo_public_marts"
+[0m14:33:19.871880 [debug] [ThreadPool]: On create_influur_demo_public_marts: COMMIT
+[0m14:33:19.872600 [debug] [ThreadPool]: SQL status: COMMIT in 0.0 seconds
+[0m14:33:19.872760 [debug] [ThreadPool]: On create_influur_demo_public_marts: Close
+[0m14:33:19.873370 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_influur_demo_public_marts, now create_influur_demo_public_core)
+[0m14:33:19.873782 [debug] [ThreadPool]: Creating schema "database: "influur_demo"
+schema: "public_core"
+"
+[0m14:33:19.874856 [debug] [ThreadPool]: Using postgres connection "create_influur_demo_public_core"
+[0m14:33:19.875007 [debug] [ThreadPool]: On create_influur_demo_public_core: BEGIN
+[0m14:33:19.875145 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:33:19.889316 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m14:33:19.889514 [debug] [ThreadPool]: Using postgres connection "create_influur_demo_public_core"
+[0m14:33:19.889665 [debug] [ThreadPool]: On create_influur_demo_public_core: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "connection_name": "create_influur_demo_public_core"} */
+create schema if not exists "public_core"
+[0m14:33:19.893937 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.0 seconds
+[0m14:33:19.894383 [debug] [ThreadPool]: On create_influur_demo_public_core: COMMIT
+[0m14:33:19.894531 [debug] [ThreadPool]: Using postgres connection "create_influur_demo_public_core"
+[0m14:33:19.894662 [debug] [ThreadPool]: On create_influur_demo_public_core: COMMIT
+[0m14:33:19.895304 [debug] [ThreadPool]: SQL status: COMMIT in 0.0 seconds
+[0m14:33:19.895481 [debug] [ThreadPool]: On create_influur_demo_public_core: Close
+[0m14:33:19.896465 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_influur_demo_public_core, now list_influur_demo_public_staging)
+[0m14:33:19.899286 [debug] [ThreadPool]: Using postgres connection "list_influur_demo_public_staging"
+[0m14:33:19.899508 [debug] [ThreadPool]: On list_influur_demo_public_staging: BEGIN
+[0m14:33:19.899639 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:33:19.925315 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m14:33:19.925510 [debug] [ThreadPool]: Using postgres connection "list_influur_demo_public_staging"
+[0m14:33:19.925681 [debug] [ThreadPool]: On list_influur_demo_public_staging: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "connection_name": "list_influur_demo_public_staging"} */
+select
+      'influur_demo' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_staging'
+    union all
+    select
+      'influur_demo' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_staging'
+    union all
+    select
+      'influur_demo' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_staging'
+  
+[0m14:33:19.945126 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m14:33:19.945675 [debug] [ThreadPool]: On list_influur_demo_public_staging: ROLLBACK
+[0m14:33:19.946063 [debug] [ThreadPool]: On list_influur_demo_public_staging: Close
+[0m14:33:19.946523 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_influur_demo_public_staging, now list_influur_demo_public_marts)
+[0m14:33:19.947563 [debug] [ThreadPool]: Using postgres connection "list_influur_demo_public_marts"
+[0m14:33:19.947705 [debug] [ThreadPool]: On list_influur_demo_public_marts: BEGIN
+[0m14:33:19.947834 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:33:19.953891 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m14:33:19.954046 [debug] [ThreadPool]: Using postgres connection "list_influur_demo_public_marts"
+[0m14:33:19.954214 [debug] [ThreadPool]: On list_influur_demo_public_marts: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "connection_name": "list_influur_demo_public_marts"} */
+select
+      'influur_demo' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_marts'
+    union all
+    select
+      'influur_demo' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_marts'
+    union all
+    select
+      'influur_demo' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_marts'
+  
+[0m14:33:19.955685 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m14:33:19.956170 [debug] [ThreadPool]: On list_influur_demo_public_marts: ROLLBACK
+[0m14:33:19.956557 [debug] [ThreadPool]: On list_influur_demo_public_marts: Close
+[0m14:33:19.957048 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_influur_demo_public_marts, now list_influur_demo_public_core)
+[0m14:33:19.958034 [debug] [ThreadPool]: Using postgres connection "list_influur_demo_public_core"
+[0m14:33:19.958184 [debug] [ThreadPool]: On list_influur_demo_public_core: BEGIN
+[0m14:33:19.958312 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:33:19.964609 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m14:33:19.964758 [debug] [ThreadPool]: Using postgres connection "list_influur_demo_public_core"
+[0m14:33:19.964922 [debug] [ThreadPool]: On list_influur_demo_public_core: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "connection_name": "list_influur_demo_public_core"} */
+select
+      'influur_demo' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_core'
+    union all
+    select
+      'influur_demo' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_core'
+    union all
+    select
+      'influur_demo' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_core'
+  
+[0m14:33:19.966347 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m14:33:19.966821 [debug] [ThreadPool]: On list_influur_demo_public_core: ROLLBACK
+[0m14:33:19.967180 [debug] [ThreadPool]: On list_influur_demo_public_core: Close
+[0m14:33:19.969147 [debug] [MainThread]: Using postgres connection "master"
+[0m14:33:19.969301 [debug] [MainThread]: On master: BEGIN
+[0m14:33:19.969442 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:33:19.975710 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m14:33:19.975853 [debug] [MainThread]: Using postgres connection "master"
+[0m14:33:19.976064 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m14:33:19.985486 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m14:33:19.986121 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fa9f4e67-9079-4d93-8478-c1068b10cf9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b60590>]}
+[0m14:33:19.986354 [debug] [MainThread]: On master: ROLLBACK
+[0m14:33:19.986745 [debug] [MainThread]: Using postgres connection "master"
+[0m14:33:19.986877 [debug] [MainThread]: On master: BEGIN
+[0m14:33:19.987436 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m14:33:19.987577 [debug] [MainThread]: On master: COMMIT
+[0m14:33:19.987705 [debug] [MainThread]: Using postgres connection "master"
+[0m14:33:19.987834 [debug] [MainThread]: On master: COMMIT
+[0m14:33:19.988182 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m14:33:19.988314 [debug] [MainThread]: On master: Close
+[0m14:33:19.988632 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:33:19.988792 [info ] [MainThread]: 
+[0m14:33:19.990099 [debug] [Thread-1 (]: Began running node model.influur_viral_agent.stg_influencers
+[0m14:33:19.990366 [info ] [Thread-1 (]: 1 of 5 START sql view model public_staging.stg_influencers ..................... [RUN]
+[0m14:33:19.990694 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_influur_demo_public_core, now model.influur_viral_agent.stg_influencers)
+[0m14:33:19.990870 [debug] [Thread-1 (]: Began compiling node model.influur_viral_agent.stg_influencers
+[0m14:33:19.994312 [debug] [Thread-1 (]: Writing injected SQL for node "model.influur_viral_agent.stg_influencers"
+[0m14:33:19.994898 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.stg_influencers (compile): 14:33:19.990974 => 14:33:19.994793
+[0m14:33:19.995074 [debug] [Thread-1 (]: Began executing node model.influur_viral_agent.stg_influencers
+[0m14:33:20.010909 [debug] [Thread-1 (]: Writing runtime sql for node "model.influur_viral_agent.stg_influencers"
+[0m14:33:20.011526 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_influencers"
+[0m14:33:20.011694 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_influencers: BEGIN
+[0m14:33:20.011847 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:33:20.019287 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m14:33:20.019490 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_influencers"
+[0m14:33:20.019676 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_influencers: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.stg_influencers"} */
+
+  create view "influur_demo"."public_staging"."stg_influencers__dbt_tmp"
+    
+    
+  as (
+    with source as (
+    select
+        influencer_id,
+        handle,
+        platform,
+        follower_count::bigint,
+        avg_views::bigint,
+        engagement_rate::float,
+        country,
+        language,
+        category,
+        content_style,
+        cost_per_post::numeric,
+        age_bracket
+    from "influur_demo"."public"."raw_influencers"
+)
+
+select * from source
+  );
+[0m14:33:20.025295 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m14:33:20.029033 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_influencers"
+[0m14:33:20.029227 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_influencers: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.stg_influencers"} */
+alter table "influur_demo"."public_staging"."stg_influencers__dbt_tmp" rename to "stg_influencers"
+[0m14:33:20.030063 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m14:33:20.036075 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_influencers: COMMIT
+[0m14:33:20.036245 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_influencers"
+[0m14:33:20.036389 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_influencers: COMMIT
+[0m14:33:20.037321 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m14:33:20.039882 [debug] [Thread-1 (]: Applying DROP to: "influur_demo"."public_staging"."stg_influencers__dbt_backup"
+[0m14:33:20.041923 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_influencers"
+[0m14:33:20.042093 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_influencers: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.stg_influencers"} */
+drop view if exists "influur_demo"."public_staging"."stg_influencers__dbt_backup" cascade
+[0m14:33:20.042809 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m14:33:20.043493 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.stg_influencers (execute): 14:33:19.995184 => 14:33:20.043398
+[0m14:33:20.043665 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_influencers: Close
+[0m14:33:20.044036 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fa9f4e67-9079-4d93-8478-c1068b10cf9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1080ba1d0>]}
+[0m14:33:20.044323 [info ] [Thread-1 (]: 1 of 5 OK created sql view model public_staging.stg_influencers ................ [[32mCREATE VIEW[0m in 0.05s]
+[0m14:33:20.044607 [debug] [Thread-1 (]: Finished running node model.influur_viral_agent.stg_influencers
+[0m14:33:20.044809 [debug] [Thread-1 (]: Began running node model.influur_viral_agent.stg_posts
+[0m14:33:20.045066 [info ] [Thread-1 (]: 2 of 5 START sql view model public_staging.stg_posts ........................... [RUN]
+[0m14:33:20.045393 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.influur_viral_agent.stg_influencers, now model.influur_viral_agent.stg_posts)
+[0m14:33:20.045564 [debug] [Thread-1 (]: Began compiling node model.influur_viral_agent.stg_posts
+[0m14:33:20.046885 [debug] [Thread-1 (]: Writing injected SQL for node "model.influur_viral_agent.stg_posts"
+[0m14:33:20.047397 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.stg_posts (compile): 14:33:20.045661 => 14:33:20.047246
+[0m14:33:20.047601 [debug] [Thread-1 (]: Began executing node model.influur_viral_agent.stg_posts
+[0m14:33:20.049467 [debug] [Thread-1 (]: Writing runtime sql for node "model.influur_viral_agent.stg_posts"
+[0m14:33:20.049796 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_posts"
+[0m14:33:20.049954 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_posts: BEGIN
+[0m14:33:20.050100 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:33:20.058548 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m14:33:20.058785 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_posts"
+[0m14:33:20.058965 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_posts: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.stg_posts"} */
+
+  create view "influur_demo"."public_staging"."stg_posts__dbt_tmp"
+    
+    
+  as (
+    with source as (
+    select
+        post_id,
+        influencer_id,
+        platform,
+        posted_at::timestamp,
+        caption,
+        views::bigint,
+        likes::bigint,
+        comments::bigint,
+        shares::bigint,
+        audio_type,
+        campaign_tag
+    from "influur_demo"."public"."raw_posts"
+)
+
+select * from source
+  );
+[0m14:33:20.062953 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m14:33:20.064747 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_posts"
+[0m14:33:20.064940 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_posts: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.stg_posts"} */
+alter table "influur_demo"."public_staging"."stg_posts__dbt_tmp" rename to "stg_posts"
+[0m14:33:20.065610 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m14:33:20.066343 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_posts: COMMIT
+[0m14:33:20.066500 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_posts"
+[0m14:33:20.066643 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_posts: COMMIT
+[0m14:33:20.071172 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m14:33:20.072549 [debug] [Thread-1 (]: Applying DROP to: "influur_demo"."public_staging"."stg_posts__dbt_backup"
+[0m14:33:20.072917 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_posts"
+[0m14:33:20.073079 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_posts: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.stg_posts"} */
+drop view if exists "influur_demo"."public_staging"."stg_posts__dbt_backup" cascade
+[0m14:33:20.073609 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m14:33:20.074357 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.stg_posts (execute): 14:33:20.047705 => 14:33:20.074257
+[0m14:33:20.074603 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_posts: Close
+[0m14:33:20.075033 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fa9f4e67-9079-4d93-8478-c1068b10cf9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10812bf10>]}
+[0m14:33:20.075342 [info ] [Thread-1 (]: 2 of 5 OK created sql view model public_staging.stg_posts ...................... [[32mCREATE VIEW[0m in 0.03s]
+[0m14:33:20.075666 [debug] [Thread-1 (]: Finished running node model.influur_viral_agent.stg_posts
+[0m14:33:20.076119 [debug] [Thread-1 (]: Began running node model.influur_viral_agent.fact_post_performance
+[0m14:33:20.076351 [info ] [Thread-1 (]: 3 of 5 START sql view model public_core.fact_post_performance .................. [RUN]
+[0m14:33:20.076699 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.influur_viral_agent.stg_posts, now model.influur_viral_agent.fact_post_performance)
+[0m14:33:20.076874 [debug] [Thread-1 (]: Began compiling node model.influur_viral_agent.fact_post_performance
+[0m14:33:20.078344 [debug] [Thread-1 (]: Writing injected SQL for node "model.influur_viral_agent.fact_post_performance"
+[0m14:33:20.078854 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.fact_post_performance (compile): 14:33:20.076974 => 14:33:20.078749
+[0m14:33:20.079036 [debug] [Thread-1 (]: Began executing node model.influur_viral_agent.fact_post_performance
+[0m14:33:20.081022 [debug] [Thread-1 (]: Writing runtime sql for node "model.influur_viral_agent.fact_post_performance"
+[0m14:33:20.081494 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fact_post_performance"
+[0m14:33:20.081675 [debug] [Thread-1 (]: On model.influur_viral_agent.fact_post_performance: BEGIN
+[0m14:33:20.081826 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:33:20.099368 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m14:33:20.099595 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fact_post_performance"
+[0m14:33:20.099769 [debug] [Thread-1 (]: On model.influur_viral_agent.fact_post_performance: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.fact_post_performance"} */
+
+  create view "influur_demo"."public_core"."fact_post_performance__dbt_tmp"
+    
+    
+  as (
+    select
+    p.post_id,
+    p.influencer_id,
+    p.platform,
+    date_trunc('day', p.posted_at) as post_date,
+    p.views,
+    p.likes,
+    p.comments,
+    p.shares,
+    case
+        when p.views = 0 then 0
+        else (p.likes + p.comments + p.shares)::float / p.views
+    end as engagement_rate,
+    p.audio_type,
+    p.campaign_tag
+from "influur_demo"."public_staging"."stg_posts" p
+  );
+[0m14:33:20.103033 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m14:33:20.104566 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fact_post_performance"
+[0m14:33:20.104750 [debug] [Thread-1 (]: On model.influur_viral_agent.fact_post_performance: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.fact_post_performance"} */
+alter table "influur_demo"."public_core"."fact_post_performance__dbt_tmp" rename to "fact_post_performance"
+[0m14:33:20.105593 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m14:33:20.106487 [debug] [Thread-1 (]: On model.influur_viral_agent.fact_post_performance: COMMIT
+[0m14:33:20.106653 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fact_post_performance"
+[0m14:33:20.106802 [debug] [Thread-1 (]: On model.influur_viral_agent.fact_post_performance: COMMIT
+[0m14:33:20.107557 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m14:33:20.108692 [debug] [Thread-1 (]: Applying DROP to: "influur_demo"."public_core"."fact_post_performance__dbt_backup"
+[0m14:33:20.109156 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fact_post_performance"
+[0m14:33:20.109322 [debug] [Thread-1 (]: On model.influur_viral_agent.fact_post_performance: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.fact_post_performance"} */
+drop view if exists "influur_demo"."public_core"."fact_post_performance__dbt_backup" cascade
+[0m14:33:20.109774 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m14:33:20.110413 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.fact_post_performance (execute): 14:33:20.079133 => 14:33:20.110318
+[0m14:33:20.110571 [debug] [Thread-1 (]: On model.influur_viral_agent.fact_post_performance: Close
+[0m14:33:20.110934 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fa9f4e67-9079-4d93-8478-c1068b10cf9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f91350>]}
+[0m14:33:20.111210 [info ] [Thread-1 (]: 3 of 5 OK created sql view model public_core.fact_post_performance ............. [[32mCREATE VIEW[0m in 0.03s]
+[0m14:33:20.111461 [debug] [Thread-1 (]: Finished running node model.influur_viral_agent.fact_post_performance
+[0m14:33:20.111805 [debug] [Thread-1 (]: Began running node model.influur_viral_agent.fct_influencer_features
+[0m14:33:20.112037 [info ] [Thread-1 (]: 4 of 5 START sql view model public_core.fct_influencer_features ................ [RUN]
+[0m14:33:20.112418 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.influur_viral_agent.fact_post_performance, now model.influur_viral_agent.fct_influencer_features)
+[0m14:33:20.112598 [debug] [Thread-1 (]: Began compiling node model.influur_viral_agent.fct_influencer_features
+[0m14:33:20.114047 [debug] [Thread-1 (]: Writing injected SQL for node "model.influur_viral_agent.fct_influencer_features"
+[0m14:33:20.114443 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.fct_influencer_features (compile): 14:33:20.112699 => 14:33:20.114345
+[0m14:33:20.114604 [debug] [Thread-1 (]: Began executing node model.influur_viral_agent.fct_influencer_features
+[0m14:33:20.117435 [debug] [Thread-1 (]: Writing runtime sql for node "model.influur_viral_agent.fct_influencer_features"
+[0m14:33:20.117748 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fct_influencer_features"
+[0m14:33:20.117904 [debug] [Thread-1 (]: On model.influur_viral_agent.fct_influencer_features: BEGIN
+[0m14:33:20.118051 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:33:20.124942 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m14:33:20.125180 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fct_influencer_features"
+[0m14:33:20.125402 [debug] [Thread-1 (]: On model.influur_viral_agent.fct_influencer_features: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.fct_influencer_features"} */
+
+  create view "influur_demo"."public_core"."fct_influencer_features__dbt_tmp"
+    
+    
+  as (
+    with perf as (
+    select
+        influencer_id,
+        avg(views) as avg_views_last_n_posts,
+        avg(engagement_rate) as avg_engagement_last_n_posts,
+        avg(shares)::float as avg_shares,
+        count(*) as post_count
+    from "influur_demo"."public_core"."fact_post_performance"
+    where post_date >= current_date - interval '90 days'
+    group by influencer_id
+),
+
+base as (
+    select
+        i.influencer_id,
+        i.handle,
+        i.platform,
+        i.follower_count,
+        i.avg_views as historical_avg_views,
+        i.engagement_rate as historical_engagement_rate,
+        i.country,
+        i.language,
+        i.category,
+        i.content_style,
+        i.cost_per_post,
+        i.age_bracket,
+        coalesce(p.avg_views_last_n_posts, i.avg_views) as recent_avg_views,
+        coalesce(p.avg_engagement_last_n_posts, i.engagement_rate) as recent_engagement_rate,
+        coalesce(p.post_count, 0) as post_count_last_90d
+    from "influur_demo"."public_staging"."stg_influencers" i
+    left join perf p on i.influencer_id = p.influencer_id
+)
+
+select * from base
+  );
+[0m14:33:20.129064 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m14:33:20.130689 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fct_influencer_features"
+[0m14:33:20.130882 [debug] [Thread-1 (]: On model.influur_viral_agent.fct_influencer_features: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.fct_influencer_features"} */
+alter table "influur_demo"."public_core"."fct_influencer_features__dbt_tmp" rename to "fct_influencer_features"
+[0m14:33:20.131489 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m14:33:20.132241 [debug] [Thread-1 (]: On model.influur_viral_agent.fct_influencer_features: COMMIT
+[0m14:33:20.132415 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fct_influencer_features"
+[0m14:33:20.132567 [debug] [Thread-1 (]: On model.influur_viral_agent.fct_influencer_features: COMMIT
+[0m14:33:20.133371 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m14:33:20.134558 [debug] [Thread-1 (]: Applying DROP to: "influur_demo"."public_core"."fct_influencer_features__dbt_backup"
+[0m14:33:20.134932 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fct_influencer_features"
+[0m14:33:20.135106 [debug] [Thread-1 (]: On model.influur_viral_agent.fct_influencer_features: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.fct_influencer_features"} */
+drop view if exists "influur_demo"."public_core"."fct_influencer_features__dbt_backup" cascade
+[0m14:33:20.135618 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m14:33:20.136356 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.fct_influencer_features (execute): 14:33:20.114698 => 14:33:20.136260
+[0m14:33:20.136523 [debug] [Thread-1 (]: On model.influur_viral_agent.fct_influencer_features: Close
+[0m14:33:20.136885 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fa9f4e67-9079-4d93-8478-c1068b10cf9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1081853d0>]}
+[0m14:33:20.137167 [info ] [Thread-1 (]: 4 of 5 OK created sql view model public_core.fct_influencer_features ........... [[32mCREATE VIEW[0m in 0.02s]
+[0m14:33:20.137410 [debug] [Thread-1 (]: Finished running node model.influur_viral_agent.fct_influencer_features
+[0m14:33:20.137814 [debug] [Thread-1 (]: Began running node model.influur_viral_agent.mart_influencer_recommendations
+[0m14:33:20.138080 [info ] [Thread-1 (]: 5 of 5 START sql table model public_marts.mart_influencer_recommendations ...... [RUN]
+[0m14:33:20.138408 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.influur_viral_agent.fct_influencer_features, now model.influur_viral_agent.mart_influencer_recommendations)
+[0m14:33:20.138579 [debug] [Thread-1 (]: Began compiling node model.influur_viral_agent.mart_influencer_recommendations
+[0m14:33:20.139823 [debug] [Thread-1 (]: Writing injected SQL for node "model.influur_viral_agent.mart_influencer_recommendations"
+[0m14:33:20.140270 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.mart_influencer_recommendations (compile): 14:33:20.138675 => 14:33:20.140175
+[0m14:33:20.140431 [debug] [Thread-1 (]: Began executing node model.influur_viral_agent.mart_influencer_recommendations
+[0m14:33:20.150640 [debug] [Thread-1 (]: Writing runtime sql for node "model.influur_viral_agent.mart_influencer_recommendations"
+[0m14:33:20.151090 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.mart_influencer_recommendations"
+[0m14:33:20.151262 [debug] [Thread-1 (]: On model.influur_viral_agent.mart_influencer_recommendations: BEGIN
+[0m14:33:20.151421 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:33:20.158756 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m14:33:20.159016 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.mart_influencer_recommendations"
+[0m14:33:20.159221 [debug] [Thread-1 (]: On model.influur_viral_agent.mart_influencer_recommendations: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.mart_influencer_recommendations"} */
+
+  
+    
+
+  create  table "influur_demo"."public_marts"."mart_influencer_recommendations__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with features as (
+    select * from "influur_demo"."public_core"."fct_influencer_features"
+),
+
+scored as (
+    select
+        influencer_id,
+        handle,
+        platform,
+        follower_count,
+        country,
+        language,
+        category,
+        content_style,
+        cost_per_post,
+        age_bracket,
+        recent_avg_views,
+        recent_engagement_rate,
+        post_count_last_90d,
+        (
+            0.4 * (log(greatest(recent_avg_views, 1))) +
+            0.4 * (recent_engagement_rate * 100) +
+            0.2 * log(greatest(post_count_last_90d + 1, 1))
+        ) as virality_score
+    from features
+)
+
+select * from scored
+  );
+  
+[0m14:33:20.241089 [debug] [Thread-1 (]: SQL status: SELECT 200 in 0.0 seconds
+[0m14:33:20.242889 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.mart_influencer_recommendations"
+[0m14:33:20.243097 [debug] [Thread-1 (]: On model.influur_viral_agent.mart_influencer_recommendations: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.mart_influencer_recommendations"} */
+alter table "influur_demo"."public_marts"."mart_influencer_recommendations__dbt_tmp" rename to "mart_influencer_recommendations"
+[0m14:33:20.244057 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m14:33:20.246639 [debug] [Thread-1 (]: On model.influur_viral_agent.mart_influencer_recommendations: COMMIT
+[0m14:33:20.246814 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.mart_influencer_recommendations"
+[0m14:33:20.246965 [debug] [Thread-1 (]: On model.influur_viral_agent.mart_influencer_recommendations: COMMIT
+[0m14:33:20.247858 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m14:33:20.249004 [debug] [Thread-1 (]: Applying DROP to: "influur_demo"."public_marts"."mart_influencer_recommendations__dbt_backup"
+[0m14:33:20.250398 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.mart_influencer_recommendations"
+[0m14:33:20.250588 [debug] [Thread-1 (]: On model.influur_viral_agent.mart_influencer_recommendations: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.mart_influencer_recommendations"} */
+drop table if exists "influur_demo"."public_marts"."mart_influencer_recommendations__dbt_backup" cascade
+[0m14:33:20.251125 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m14:33:20.251744 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.mart_influencer_recommendations (execute): 14:33:20.140525 => 14:33:20.251650
+[0m14:33:20.251913 [debug] [Thread-1 (]: On model.influur_viral_agent.mart_influencer_recommendations: Close
+[0m14:33:20.252328 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fa9f4e67-9079-4d93-8478-c1068b10cf9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108166f50>]}
+[0m14:33:20.252658 [info ] [Thread-1 (]: 5 of 5 OK created sql table model public_marts.mart_influencer_recommendations . [[32mSELECT 200[0m in 0.11s]
+[0m14:33:20.252910 [debug] [Thread-1 (]: Finished running node model.influur_viral_agent.mart_influencer_recommendations
+[0m14:33:20.253599 [debug] [MainThread]: Using postgres connection "master"
+[0m14:33:20.253771 [debug] [MainThread]: On master: BEGIN
+[0m14:33:20.253906 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:33:20.261173 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m14:33:20.261342 [debug] [MainThread]: On master: COMMIT
+[0m14:33:20.261479 [debug] [MainThread]: Using postgres connection "master"
+[0m14:33:20.261602 [debug] [MainThread]: On master: COMMIT
+[0m14:33:20.262013 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m14:33:20.262148 [debug] [MainThread]: On master: Close
+[0m14:33:20.262458 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:33:20.262592 [debug] [MainThread]: Connection 'model.influur_viral_agent.mart_influencer_recommendations' was properly closed.
+[0m14:33:20.262758 [info ] [MainThread]: 
+[0m14:33:20.262980 [info ] [MainThread]: Finished running 4 view models, 1 table model in 0 hours 0 minutes and 0.68 seconds (0.68s).
+[0m14:33:20.263472 [debug] [MainThread]: Command end result
+[0m14:33:20.268067 [info ] [MainThread]: 
+[0m14:33:20.268304 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:33:20.268525 [info ] [MainThread]: 
+[0m14:33:20.268683 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m14:33:20.270976 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.4554785, "process_user_time": 1.661569, "process_kernel_time": 0.178695, "process_mem_max_rss": "136085504", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:33:20.271286 [debug] [MainThread]: Command `dbt run` succeeded at 14:33:20.271223 after 1.46 seconds
+[0m14:33:20.271484 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102a61dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106faa5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069642d0>]}
+[0m14:33:20.271669 [debug] [MainThread]: Flushing usage events
+[0m14:50:30.205698 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d52710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ea3ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108eb9910>]}
+
+
+============================== 14:50:30.208401 | a48980bd-ea5d-429a-8e4d-148086e32fa0 ==============================
+[0m14:50:30.208401 [info ] [MainThread]: Running with dbt=1.7.19
+[0m14:50:30.208725 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/avi/Desktop/projects/influur-viral-agent-demo/pipelines/../dbt', 'log_path': '/Users/avi/Desktop/projects/influur-viral-agent-demo/dbt/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m14:50:30.339858 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a48980bd-ea5d-429a-8e4d-148086e32fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e94850>]}
+[0m14:50:30.376154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a48980bd-ea5d-429a-8e4d-148086e32fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ed2990>]}
+[0m14:50:30.376735 [info ] [MainThread]: Registered adapter: postgres=1.7.19
+[0m14:50:30.388773 [debug] [MainThread]: checksum: a8d43cdff37d0f32d7fbe4c5c25bea4bb6c86e162f8ce8fdb1a38cdcf7495431, vars: {}, profile: , target: , version: 1.7.19
+[0m14:50:30.417194 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:50:30.417508 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:50:30.420658 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a48980bd-ea5d-429a-8e4d-148086e32fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10947f050>]}
+[0m14:50:30.428687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a48980bd-ea5d-429a-8e4d-148086e32fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a3fdd0>]}
+[0m14:50:30.428921 [info ] [MainThread]: Found 5 models, 4 tests, 2 sources, 0 exposures, 0 metrics, 415 macros, 0 groups, 0 semantic models
+[0m14:50:30.429132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a48980bd-ea5d-429a-8e4d-148086e32fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109544c50>]}
+[0m14:50:30.430109 [info ] [MainThread]: 
+[0m14:50:30.430498 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m14:50:30.431165 [debug] [ThreadPool]: Acquiring new postgres connection 'list_influur_demo'
+[0m14:50:30.436127 [debug] [ThreadPool]: Using postgres connection "list_influur_demo"
+[0m14:50:30.436346 [debug] [ThreadPool]: On list_influur_demo: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "connection_name": "list_influur_demo"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m14:50:30.436502 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:50:30.468942 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.0 seconds
+[0m14:50:30.469814 [debug] [ThreadPool]: On list_influur_demo: Close
+[0m14:50:30.471378 [debug] [ThreadPool]: Using postgres connection "list_influur_demo"
+[0m14:50:30.471734 [debug] [ThreadPool]: On list_influur_demo: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "connection_name": "list_influur_demo"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m14:50:30.471901 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:50:30.479486 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.0 seconds
+[0m14:50:30.480142 [debug] [ThreadPool]: On list_influur_demo: Close
+[0m14:50:30.481432 [debug] [ThreadPool]: Using postgres connection "list_influur_demo"
+[0m14:50:30.481615 [debug] [ThreadPool]: On list_influur_demo: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "connection_name": "list_influur_demo"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m14:50:30.481756 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:50:30.489207 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.0 seconds
+[0m14:50:30.489846 [debug] [ThreadPool]: On list_influur_demo: Close
+[0m14:50:30.490680 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_influur_demo, now list_influur_demo_public_staging)
+[0m14:50:30.493373 [debug] [ThreadPool]: Using postgres connection "list_influur_demo_public_staging"
+[0m14:50:30.493550 [debug] [ThreadPool]: On list_influur_demo_public_staging: BEGIN
+[0m14:50:30.493681 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:50:30.510900 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m14:50:30.511078 [debug] [ThreadPool]: Using postgres connection "list_influur_demo_public_staging"
+[0m14:50:30.511253 [debug] [ThreadPool]: On list_influur_demo_public_staging: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "connection_name": "list_influur_demo_public_staging"} */
+select
+      'influur_demo' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_staging'
+    union all
+    select
+      'influur_demo' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_staging'
+    union all
+    select
+      'influur_demo' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_staging'
+  
+[0m14:50:30.541042 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.0 seconds
+[0m14:50:30.541731 [debug] [ThreadPool]: On list_influur_demo_public_staging: ROLLBACK
+[0m14:50:30.542209 [debug] [ThreadPool]: On list_influur_demo_public_staging: Close
+[0m14:50:30.542718 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_influur_demo_public_staging, now list_influur_demo_public_marts)
+[0m14:50:30.544045 [debug] [ThreadPool]: Using postgres connection "list_influur_demo_public_marts"
+[0m14:50:30.544204 [debug] [ThreadPool]: On list_influur_demo_public_marts: BEGIN
+[0m14:50:30.544338 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:50:30.551608 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m14:50:30.551780 [debug] [ThreadPool]: Using postgres connection "list_influur_demo_public_marts"
+[0m14:50:30.551940 [debug] [ThreadPool]: On list_influur_demo_public_marts: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "connection_name": "list_influur_demo_public_marts"} */
+select
+      'influur_demo' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_marts'
+    union all
+    select
+      'influur_demo' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_marts'
+    union all
+    select
+      'influur_demo' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_marts'
+  
+[0m14:50:30.554493 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.0 seconds
+[0m14:50:30.555020 [debug] [ThreadPool]: On list_influur_demo_public_marts: ROLLBACK
+[0m14:50:30.555452 [debug] [ThreadPool]: On list_influur_demo_public_marts: Close
+[0m14:50:30.555959 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_influur_demo_public_marts, now list_influur_demo_public_core)
+[0m14:50:30.557088 [debug] [ThreadPool]: Using postgres connection "list_influur_demo_public_core"
+[0m14:50:30.557246 [debug] [ThreadPool]: On list_influur_demo_public_core: BEGIN
+[0m14:50:30.557380 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:50:30.564305 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m14:50:30.564456 [debug] [ThreadPool]: Using postgres connection "list_influur_demo_public_core"
+[0m14:50:30.564614 [debug] [ThreadPool]: On list_influur_demo_public_core: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "connection_name": "list_influur_demo_public_core"} */
+select
+      'influur_demo' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_core'
+    union all
+    select
+      'influur_demo' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_core'
+    union all
+    select
+      'influur_demo' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_core'
+  
+[0m14:50:30.566635 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.0 seconds
+[0m14:50:30.567125 [debug] [ThreadPool]: On list_influur_demo_public_core: ROLLBACK
+[0m14:50:30.567529 [debug] [ThreadPool]: On list_influur_demo_public_core: Close
+[0m14:50:30.569786 [debug] [MainThread]: Using postgres connection "master"
+[0m14:50:30.569938 [debug] [MainThread]: On master: BEGIN
+[0m14:50:30.570060 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:50:30.583016 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m14:50:30.583271 [debug] [MainThread]: Using postgres connection "master"
+[0m14:50:30.583549 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m14:50:30.611080 [debug] [MainThread]: SQL status: SELECT 5 in 0.0 seconds
+[0m14:50:30.612217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a48980bd-ea5d-429a-8e4d-148086e32fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061debd0>]}
+[0m14:50:30.612462 [debug] [MainThread]: On master: ROLLBACK
+[0m14:50:30.612917 [debug] [MainThread]: Using postgres connection "master"
+[0m14:50:30.613069 [debug] [MainThread]: On master: BEGIN
+[0m14:50:30.613822 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m14:50:30.614022 [debug] [MainThread]: On master: COMMIT
+[0m14:50:30.614174 [debug] [MainThread]: Using postgres connection "master"
+[0m14:50:30.614306 [debug] [MainThread]: On master: COMMIT
+[0m14:50:30.614730 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m14:50:30.614911 [debug] [MainThread]: On master: Close
+[0m14:50:30.615257 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:50:30.615458 [info ] [MainThread]: 
+[0m14:50:30.616739 [debug] [Thread-1 (]: Began running node model.influur_viral_agent.stg_influencers
+[0m14:50:30.617009 [info ] [Thread-1 (]: 1 of 5 START sql view model public_staging.stg_influencers ..................... [RUN]
+[0m14:50:30.617341 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_influur_demo_public_core, now model.influur_viral_agent.stg_influencers)
+[0m14:50:30.617517 [debug] [Thread-1 (]: Began compiling node model.influur_viral_agent.stg_influencers
+[0m14:50:30.621138 [debug] [Thread-1 (]: Writing injected SQL for node "model.influur_viral_agent.stg_influencers"
+[0m14:50:30.621597 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.stg_influencers (compile): 14:50:30.617623 => 14:50:30.621482
+[0m14:50:30.621782 [debug] [Thread-1 (]: Began executing node model.influur_viral_agent.stg_influencers
+[0m14:50:30.638122 [debug] [Thread-1 (]: Writing runtime sql for node "model.influur_viral_agent.stg_influencers"
+[0m14:50:30.638765 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_influencers"
+[0m14:50:30.638937 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_influencers: BEGIN
+[0m14:50:30.639093 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:50:30.645270 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m14:50:30.645470 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_influencers"
+[0m14:50:30.645651 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_influencers: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.stg_influencers"} */
+
+  create view "influur_demo"."public_staging"."stg_influencers__dbt_tmp"
+    
+    
+  as (
+    with source as (
+    select
+        influencer_id,
+        handle,
+        platform,
+        follower_count::bigint,
+        avg_views::bigint,
+        engagement_rate::float,
+        country,
+        language,
+        category,
+        content_style,
+        cost_per_post::numeric,
+        age_bracket
+    from "influur_demo"."public"."raw_influencers"
+)
+
+select * from source
+  );
+[0m14:50:30.651216 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m14:50:30.654209 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_influencers"
+[0m14:50:30.654424 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_influencers: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.stg_influencers"} */
+alter table "influur_demo"."public_staging"."stg_influencers" rename to "stg_influencers__dbt_backup"
+[0m14:50:30.656688 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m14:50:30.658222 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_influencers"
+[0m14:50:30.658393 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_influencers: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.stg_influencers"} */
+alter table "influur_demo"."public_staging"."stg_influencers__dbt_tmp" rename to "stg_influencers"
+[0m14:50:30.658978 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m14:50:30.666005 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_influencers: COMMIT
+[0m14:50:30.666190 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_influencers"
+[0m14:50:30.666350 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_influencers: COMMIT
+[0m14:50:30.667498 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m14:50:30.670280 [debug] [Thread-1 (]: Applying DROP to: "influur_demo"."public_staging"."stg_influencers__dbt_backup"
+[0m14:50:30.672538 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_influencers"
+[0m14:50:30.672770 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_influencers: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.stg_influencers"} */
+drop view if exists "influur_demo"."public_staging"."stg_influencers__dbt_backup" cascade
+[0m14:50:30.676488 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m14:50:30.677164 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.stg_influencers (execute): 14:50:30.621882 => 14:50:30.677059
+[0m14:50:30.677342 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_influencers: Close
+[0m14:50:30.677720 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a48980bd-ea5d-429a-8e4d-148086e32fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a73a10>]}
+[0m14:50:30.678036 [info ] [Thread-1 (]: 1 of 5 OK created sql view model public_staging.stg_influencers ................ [[32mCREATE VIEW[0m in 0.06s]
+[0m14:50:30.678333 [debug] [Thread-1 (]: Finished running node model.influur_viral_agent.stg_influencers
+[0m14:50:30.678554 [debug] [Thread-1 (]: Began running node model.influur_viral_agent.stg_posts
+[0m14:50:30.678815 [info ] [Thread-1 (]: 2 of 5 START sql view model public_staging.stg_posts ........................... [RUN]
+[0m14:50:30.679160 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.influur_viral_agent.stg_influencers, now model.influur_viral_agent.stg_posts)
+[0m14:50:30.679338 [debug] [Thread-1 (]: Began compiling node model.influur_viral_agent.stg_posts
+[0m14:50:30.680642 [debug] [Thread-1 (]: Writing injected SQL for node "model.influur_viral_agent.stg_posts"
+[0m14:50:30.681033 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.stg_posts (compile): 14:50:30.679455 => 14:50:30.680935
+[0m14:50:30.681200 [debug] [Thread-1 (]: Began executing node model.influur_viral_agent.stg_posts
+[0m14:50:30.683304 [debug] [Thread-1 (]: Writing runtime sql for node "model.influur_viral_agent.stg_posts"
+[0m14:50:30.683596 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_posts"
+[0m14:50:30.683756 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_posts: BEGIN
+[0m14:50:30.683904 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:50:30.690684 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m14:50:30.690919 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_posts"
+[0m14:50:30.691106 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_posts: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.stg_posts"} */
+
+  create view "influur_demo"."public_staging"."stg_posts__dbt_tmp"
+    
+    
+  as (
+    with source as (
+    select
+        post_id,
+        influencer_id,
+        platform,
+        posted_at::timestamp,
+        caption,
+        views::bigint,
+        likes::bigint,
+        comments::bigint,
+        shares::bigint,
+        audio_type,
+        campaign_tag
+    from "influur_demo"."public"."raw_posts"
+)
+
+select * from source
+  );
+[0m14:50:30.693136 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m14:50:30.694756 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_posts"
+[0m14:50:30.694936 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_posts: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.stg_posts"} */
+alter table "influur_demo"."public_staging"."stg_posts" rename to "stg_posts__dbt_backup"
+[0m14:50:30.695481 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m14:50:30.696777 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_posts"
+[0m14:50:30.696949 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_posts: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.stg_posts"} */
+alter table "influur_demo"."public_staging"."stg_posts__dbt_tmp" rename to "stg_posts"
+[0m14:50:30.697493 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m14:50:30.698442 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_posts: COMMIT
+[0m14:50:30.698607 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_posts"
+[0m14:50:30.698754 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_posts: COMMIT
+[0m14:50:30.699689 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m14:50:30.700971 [debug] [Thread-1 (]: Applying DROP to: "influur_demo"."public_staging"."stg_posts__dbt_backup"
+[0m14:50:30.701384 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_posts"
+[0m14:50:30.701556 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_posts: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.stg_posts"} */
+drop view if exists "influur_demo"."public_staging"."stg_posts__dbt_backup" cascade
+[0m14:50:30.702721 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m14:50:30.703404 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.stg_posts (execute): 14:50:30.681300 => 14:50:30.703299
+[0m14:50:30.703587 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_posts: Close
+[0m14:50:30.703971 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a48980bd-ea5d-429a-8e4d-148086e32fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109529f90>]}
+[0m14:50:30.704260 [info ] [Thread-1 (]: 2 of 5 OK created sql view model public_staging.stg_posts ...................... [[32mCREATE VIEW[0m in 0.02s]
+[0m14:50:30.704518 [debug] [Thread-1 (]: Finished running node model.influur_viral_agent.stg_posts
+[0m14:50:30.704969 [debug] [Thread-1 (]: Began running node model.influur_viral_agent.fact_post_performance
+[0m14:50:30.705271 [info ] [Thread-1 (]: 3 of 5 START sql view model public_core.fact_post_performance .................. [RUN]
+[0m14:50:30.705651 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.influur_viral_agent.stg_posts, now model.influur_viral_agent.fact_post_performance)
+[0m14:50:30.705841 [debug] [Thread-1 (]: Began compiling node model.influur_viral_agent.fact_post_performance
+[0m14:50:30.707169 [debug] [Thread-1 (]: Writing injected SQL for node "model.influur_viral_agent.fact_post_performance"
+[0m14:50:30.707584 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.fact_post_performance (compile): 14:50:30.705949 => 14:50:30.707484
+[0m14:50:30.707749 [debug] [Thread-1 (]: Began executing node model.influur_viral_agent.fact_post_performance
+[0m14:50:30.710664 [debug] [Thread-1 (]: Writing runtime sql for node "model.influur_viral_agent.fact_post_performance"
+[0m14:50:30.711058 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fact_post_performance"
+[0m14:50:30.711226 [debug] [Thread-1 (]: On model.influur_viral_agent.fact_post_performance: BEGIN
+[0m14:50:30.711398 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:50:30.719110 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m14:50:30.719397 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fact_post_performance"
+[0m14:50:30.719603 [debug] [Thread-1 (]: On model.influur_viral_agent.fact_post_performance: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.fact_post_performance"} */
+
+  create view "influur_demo"."public_core"."fact_post_performance__dbt_tmp"
+    
+    
+  as (
+    select
+    p.post_id,
+    p.influencer_id,
+    p.platform,
+    date_trunc('day', p.posted_at) as post_date,
+    p.views,
+    p.likes,
+    p.comments,
+    p.shares,
+    case
+        when p.views = 0 then 0
+        else (p.likes + p.comments + p.shares)::float / p.views
+    end as engagement_rate,
+    p.audio_type,
+    p.campaign_tag
+from "influur_demo"."public_staging"."stg_posts" p
+  );
+[0m14:50:30.721682 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m14:50:30.723301 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fact_post_performance"
+[0m14:50:30.723516 [debug] [Thread-1 (]: On model.influur_viral_agent.fact_post_performance: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.fact_post_performance"} */
+alter table "influur_demo"."public_core"."fact_post_performance__dbt_tmp" rename to "fact_post_performance"
+[0m14:50:30.724181 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m14:50:30.724932 [debug] [Thread-1 (]: On model.influur_viral_agent.fact_post_performance: COMMIT
+[0m14:50:30.725099 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fact_post_performance"
+[0m14:50:30.725259 [debug] [Thread-1 (]: On model.influur_viral_agent.fact_post_performance: COMMIT
+[0m14:50:30.726121 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m14:50:30.727350 [debug] [Thread-1 (]: Applying DROP to: "influur_demo"."public_core"."fact_post_performance__dbt_backup"
+[0m14:50:30.727791 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fact_post_performance"
+[0m14:50:30.727960 [debug] [Thread-1 (]: On model.influur_viral_agent.fact_post_performance: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.fact_post_performance"} */
+drop view if exists "influur_demo"."public_core"."fact_post_performance__dbt_backup" cascade
+[0m14:50:30.728603 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m14:50:30.729202 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.fact_post_performance (execute): 14:50:30.707844 => 14:50:30.729109
+[0m14:50:30.729369 [debug] [Thread-1 (]: On model.influur_viral_agent.fact_post_performance: Close
+[0m14:50:30.729738 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a48980bd-ea5d-429a-8e4d-148086e32fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109a4c410>]}
+[0m14:50:30.730012 [info ] [Thread-1 (]: 3 of 5 OK created sql view model public_core.fact_post_performance ............. [[32mCREATE VIEW[0m in 0.02s]
+[0m14:50:30.730269 [debug] [Thread-1 (]: Finished running node model.influur_viral_agent.fact_post_performance
+[0m14:50:30.730675 [debug] [Thread-1 (]: Began running node model.influur_viral_agent.fct_influencer_features
+[0m14:50:30.730925 [info ] [Thread-1 (]: 4 of 5 START sql view model public_core.fct_influencer_features ................ [RUN]
+[0m14:50:30.731277 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.influur_viral_agent.fact_post_performance, now model.influur_viral_agent.fct_influencer_features)
+[0m14:50:30.731455 [debug] [Thread-1 (]: Began compiling node model.influur_viral_agent.fct_influencer_features
+[0m14:50:30.733068 [debug] [Thread-1 (]: Writing injected SQL for node "model.influur_viral_agent.fct_influencer_features"
+[0m14:50:30.733492 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.fct_influencer_features (compile): 14:50:30.731569 => 14:50:30.733383
+[0m14:50:30.733661 [debug] [Thread-1 (]: Began executing node model.influur_viral_agent.fct_influencer_features
+[0m14:50:30.735519 [debug] [Thread-1 (]: Writing runtime sql for node "model.influur_viral_agent.fct_influencer_features"
+[0m14:50:30.735936 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fct_influencer_features"
+[0m14:50:30.736102 [debug] [Thread-1 (]: On model.influur_viral_agent.fct_influencer_features: BEGIN
+[0m14:50:30.736257 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:50:30.743494 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m14:50:30.743740 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fct_influencer_features"
+[0m14:50:30.743952 [debug] [Thread-1 (]: On model.influur_viral_agent.fct_influencer_features: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.fct_influencer_features"} */
+
+  create view "influur_demo"."public_core"."fct_influencer_features__dbt_tmp"
+    
+    
+  as (
+    with perf as (
+    select
+        influencer_id,
+        avg(views) as avg_views_last_n_posts,
+        avg(engagement_rate) as avg_engagement_last_n_posts,
+        avg(shares)::float as avg_shares,
+        count(*) as post_count
+    from "influur_demo"."public_core"."fact_post_performance"
+    where post_date >= current_date - interval '90 days'
+    group by influencer_id
+),
+
+base as (
+    select
+        i.influencer_id,
+        i.handle,
+        i.platform,
+        i.follower_count,
+        i.avg_views as historical_avg_views,
+        i.engagement_rate as historical_engagement_rate,
+        i.country,
+        i.language,
+        i.category,
+        i.content_style,
+        i.cost_per_post,
+        i.age_bracket,
+        coalesce(p.avg_views_last_n_posts, i.avg_views) as recent_avg_views,
+        coalesce(p.avg_engagement_last_n_posts, i.engagement_rate) as recent_engagement_rate,
+        coalesce(p.post_count, 0) as post_count_last_90d
+    from "influur_demo"."public_staging"."stg_influencers" i
+    left join perf p on i.influencer_id = p.influencer_id
+)
+
+select * from base
+  );
+[0m14:50:30.746237 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m14:50:30.747833 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fct_influencer_features"
+[0m14:50:30.748006 [debug] [Thread-1 (]: On model.influur_viral_agent.fct_influencer_features: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.fct_influencer_features"} */
+alter table "influur_demo"."public_core"."fct_influencer_features__dbt_tmp" rename to "fct_influencer_features"
+[0m14:50:30.748587 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m14:50:30.749344 [debug] [Thread-1 (]: On model.influur_viral_agent.fct_influencer_features: COMMIT
+[0m14:50:30.749524 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fct_influencer_features"
+[0m14:50:30.749689 [debug] [Thread-1 (]: On model.influur_viral_agent.fct_influencer_features: COMMIT
+[0m14:50:30.750703 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m14:50:30.751833 [debug] [Thread-1 (]: Applying DROP to: "influur_demo"."public_core"."fct_influencer_features__dbt_backup"
+[0m14:50:30.752210 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fct_influencer_features"
+[0m14:50:30.752366 [debug] [Thread-1 (]: On model.influur_viral_agent.fct_influencer_features: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.fct_influencer_features"} */
+drop view if exists "influur_demo"."public_core"."fct_influencer_features__dbt_backup" cascade
+[0m14:50:30.752853 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m14:50:30.753468 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.fct_influencer_features (execute): 14:50:30.733762 => 14:50:30.753359
+[0m14:50:30.753643 [debug] [Thread-1 (]: On model.influur_viral_agent.fct_influencer_features: Close
+[0m14:50:30.754008 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a48980bd-ea5d-429a-8e4d-148086e32fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095663d0>]}
+[0m14:50:30.754293 [info ] [Thread-1 (]: 4 of 5 OK created sql view model public_core.fct_influencer_features ........... [[32mCREATE VIEW[0m in 0.02s]
+[0m14:50:30.754544 [debug] [Thread-1 (]: Finished running node model.influur_viral_agent.fct_influencer_features
+[0m14:50:30.754904 [debug] [Thread-1 (]: Began running node model.influur_viral_agent.mart_influencer_recommendations
+[0m14:50:30.755152 [info ] [Thread-1 (]: 5 of 5 START sql table model public_marts.mart_influencer_recommendations ...... [RUN]
+[0m14:50:30.755554 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.influur_viral_agent.fct_influencer_features, now model.influur_viral_agent.mart_influencer_recommendations)
+[0m14:50:30.755752 [debug] [Thread-1 (]: Began compiling node model.influur_viral_agent.mart_influencer_recommendations
+[0m14:50:30.757146 [debug] [Thread-1 (]: Writing injected SQL for node "model.influur_viral_agent.mart_influencer_recommendations"
+[0m14:50:30.757623 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.mart_influencer_recommendations (compile): 14:50:30.755853 => 14:50:30.757470
+[0m14:50:30.757830 [debug] [Thread-1 (]: Began executing node model.influur_viral_agent.mart_influencer_recommendations
+[0m14:50:30.767547 [debug] [Thread-1 (]: Writing runtime sql for node "model.influur_viral_agent.mart_influencer_recommendations"
+[0m14:50:30.767909 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.mart_influencer_recommendations"
+[0m14:50:30.768090 [debug] [Thread-1 (]: On model.influur_viral_agent.mart_influencer_recommendations: BEGIN
+[0m14:50:30.768251 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:50:30.779856 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m14:50:30.780115 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.mart_influencer_recommendations"
+[0m14:50:30.780354 [debug] [Thread-1 (]: On model.influur_viral_agent.mart_influencer_recommendations: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.mart_influencer_recommendations"} */
+
+  
+    
+
+  create  table "influur_demo"."public_marts"."mart_influencer_recommendations__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with features as (
+    select * from "influur_demo"."public_core"."fct_influencer_features"
+),
+
+scored as (
+    select
+        influencer_id,
+        handle,
+        platform,
+        follower_count,
+        country,
+        language,
+        category,
+        content_style,
+        cost_per_post,
+        age_bracket,
+        recent_avg_views,
+        recent_engagement_rate,
+        post_count_last_90d,
+        (
+            0.4 * (log(greatest(recent_avg_views, 1))) +
+            0.4 * (recent_engagement_rate * 100) +
+            0.2 * log(greatest(post_count_last_90d + 1, 1))
+        ) as virality_score
+    from features
+)
+
+select * from scored
+  );
+  
+[0m14:50:30.829952 [debug] [Thread-1 (]: SQL status: SELECT 200 in 0.0 seconds
+[0m14:50:30.831697 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.mart_influencer_recommendations"
+[0m14:50:30.831900 [debug] [Thread-1 (]: On model.influur_viral_agent.mart_influencer_recommendations: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.mart_influencer_recommendations"} */
+alter table "influur_demo"."public_marts"."mart_influencer_recommendations" rename to "mart_influencer_recommendations__dbt_backup"
+[0m14:50:30.832775 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m14:50:30.834037 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.mart_influencer_recommendations"
+[0m14:50:30.834206 [debug] [Thread-1 (]: On model.influur_viral_agent.mart_influencer_recommendations: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.mart_influencer_recommendations"} */
+alter table "influur_demo"."public_marts"."mart_influencer_recommendations__dbt_tmp" rename to "mart_influencer_recommendations"
+[0m14:50:30.834791 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m14:50:30.838360 [debug] [Thread-1 (]: On model.influur_viral_agent.mart_influencer_recommendations: COMMIT
+[0m14:50:30.838551 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.mart_influencer_recommendations"
+[0m14:50:30.838714 [debug] [Thread-1 (]: On model.influur_viral_agent.mart_influencer_recommendations: COMMIT
+[0m14:50:30.839568 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m14:50:30.840726 [debug] [Thread-1 (]: Applying DROP to: "influur_demo"."public_marts"."mart_influencer_recommendations__dbt_backup"
+[0m14:50:30.842081 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.mart_influencer_recommendations"
+[0m14:50:30.842257 [debug] [Thread-1 (]: On model.influur_viral_agent.mart_influencer_recommendations: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.mart_influencer_recommendations"} */
+drop table if exists "influur_demo"."public_marts"."mart_influencer_recommendations__dbt_backup" cascade
+[0m14:50:30.847498 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m14:50:30.848103 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.mart_influencer_recommendations (execute): 14:50:30.757934 => 14:50:30.848005
+[0m14:50:30.848273 [debug] [Thread-1 (]: On model.influur_viral_agent.mart_influencer_recommendations: Close
+[0m14:50:30.848642 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a48980bd-ea5d-429a-8e4d-148086e32fa0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109c5cb50>]}
+[0m14:50:30.848935 [info ] [Thread-1 (]: 5 of 5 OK created sql table model public_marts.mart_influencer_recommendations . [[32mSELECT 200[0m in 0.09s]
+[0m14:50:30.849197 [debug] [Thread-1 (]: Finished running node model.influur_viral_agent.mart_influencer_recommendations
+[0m14:50:30.849852 [debug] [MainThread]: Using postgres connection "master"
+[0m14:50:30.850029 [debug] [MainThread]: On master: BEGIN
+[0m14:50:30.850173 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:50:30.856466 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m14:50:30.856678 [debug] [MainThread]: On master: COMMIT
+[0m14:50:30.856814 [debug] [MainThread]: Using postgres connection "master"
+[0m14:50:30.856940 [debug] [MainThread]: On master: COMMIT
+[0m14:50:30.857316 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m14:50:30.857506 [debug] [MainThread]: On master: Close
+[0m14:50:30.857913 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:50:30.858097 [debug] [MainThread]: Connection 'model.influur_viral_agent.mart_influencer_recommendations' was properly closed.
+[0m14:50:30.858291 [info ] [MainThread]: 
+[0m14:50:30.858463 [info ] [MainThread]: Finished running 4 view models, 1 table model in 0 hours 0 minutes and 0.43 seconds (0.43s).
+[0m14:50:30.858936 [debug] [MainThread]: Command end result
+[0m14:50:30.863361 [info ] [MainThread]: 
+[0m14:50:30.863629 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:50:30.863837 [info ] [MainThread]: 
+[0m14:50:30.864025 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m14:50:30.866261 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.7005003, "process_user_time": 1.155246, "process_kernel_time": 0.162457, "process_mem_max_rss": "127254528", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:50:30.866548 [debug] [MainThread]: Command `dbt run` succeeded at 14:50:30.866491 after 0.70 seconds
+[0m14:50:30.866753 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049620d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b4bad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b5a010>]}
+[0m14:50:30.866933 [debug] [MainThread]: Flushing usage events
+[0m14:55:07.584635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113adaa50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113b5fed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113b5f950>]}
+
+
+============================== 14:55:07.587333 | 399d474a-3013-413c-9860-27892de35e82 ==============================
+[0m14:55:07.587333 [info ] [MainThread]: Running with dbt=1.7.19
+[0m14:55:07.587655 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/avi/Desktop/projects/influur-viral-agent-demo/pipelines/../dbt', 'log_path': '/Users/avi/Desktop/projects/influur-viral-agent-demo/dbt/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:55:07.708465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '399d474a-3013-413c-9860-27892de35e82', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11484c650>]}
+[0m14:55:07.746744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '399d474a-3013-413c-9860-27892de35e82', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113b5b790>]}
+[0m14:55:07.747531 [info ] [MainThread]: Registered adapter: postgres=1.7.19
+[0m14:55:07.757763 [debug] [MainThread]: checksum: a8d43cdff37d0f32d7fbe4c5c25bea4bb6c86e162f8ce8fdb1a38cdcf7495431, vars: {}, profile: , target: , version: 1.7.19
+[0m14:55:07.782147 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:55:07.782372 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:55:07.785264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '399d474a-3013-413c-9860-27892de35e82', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114b94350>]}
+[0m14:55:07.792537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '399d474a-3013-413c-9860-27892de35e82', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114b53c50>]}
+[0m14:55:07.792795 [info ] [MainThread]: Found 5 models, 4 tests, 2 sources, 0 exposures, 0 metrics, 415 macros, 0 groups, 0 semantic models
+[0m14:55:07.792987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '399d474a-3013-413c-9860-27892de35e82', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113b96a90>]}
+[0m14:55:07.793966 [info ] [MainThread]: 
+[0m14:55:07.794383 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m14:55:07.795031 [debug] [ThreadPool]: Acquiring new postgres connection 'list_influur_demo'
+[0m14:55:07.799889 [debug] [ThreadPool]: Using postgres connection "list_influur_demo"
+[0m14:55:07.800112 [debug] [ThreadPool]: On list_influur_demo: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "connection_name": "list_influur_demo"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m14:55:07.800265 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:55:07.833898 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.0 seconds
+[0m14:55:07.834819 [debug] [ThreadPool]: On list_influur_demo: Close
+[0m14:55:07.836373 [debug] [ThreadPool]: Using postgres connection "list_influur_demo"
+[0m14:55:07.836742 [debug] [ThreadPool]: On list_influur_demo: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "connection_name": "list_influur_demo"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m14:55:07.836902 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:55:07.846940 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.0 seconds
+[0m14:55:07.847603 [debug] [ThreadPool]: On list_influur_demo: Close
+[0m14:55:07.848920 [debug] [ThreadPool]: Using postgres connection "list_influur_demo"
+[0m14:55:07.849100 [debug] [ThreadPool]: On list_influur_demo: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "connection_name": "list_influur_demo"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m14:55:07.849238 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:55:07.855624 [debug] [ThreadPool]: SQL status: SELECT 7 in 0.0 seconds
+[0m14:55:07.856250 [debug] [ThreadPool]: On list_influur_demo: Close
+[0m14:55:07.857041 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_influur_demo, now list_influur_demo_public_core)
+[0m14:55:07.859823 [debug] [ThreadPool]: Using postgres connection "list_influur_demo_public_core"
+[0m14:55:07.859983 [debug] [ThreadPool]: On list_influur_demo_public_core: BEGIN
+[0m14:55:07.860115 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:55:07.866847 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m14:55:07.867044 [debug] [ThreadPool]: Using postgres connection "list_influur_demo_public_core"
+[0m14:55:07.867237 [debug] [ThreadPool]: On list_influur_demo_public_core: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "connection_name": "list_influur_demo_public_core"} */
+select
+      'influur_demo' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_core'
+    union all
+    select
+      'influur_demo' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_core'
+    union all
+    select
+      'influur_demo' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_core'
+  
+[0m14:55:07.885404 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.0 seconds
+[0m14:55:07.886053 [debug] [ThreadPool]: On list_influur_demo_public_core: ROLLBACK
+[0m14:55:07.886507 [debug] [ThreadPool]: On list_influur_demo_public_core: Close
+[0m14:55:07.886989 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_influur_demo_public_core, now list_influur_demo_public_marts)
+[0m14:55:07.888295 [debug] [ThreadPool]: Using postgres connection "list_influur_demo_public_marts"
+[0m14:55:07.888447 [debug] [ThreadPool]: On list_influur_demo_public_marts: BEGIN
+[0m14:55:07.888582 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:55:07.895135 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m14:55:07.895289 [debug] [ThreadPool]: Using postgres connection "list_influur_demo_public_marts"
+[0m14:55:07.895447 [debug] [ThreadPool]: On list_influur_demo_public_marts: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "connection_name": "list_influur_demo_public_marts"} */
+select
+      'influur_demo' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_marts'
+    union all
+    select
+      'influur_demo' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_marts'
+    union all
+    select
+      'influur_demo' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_marts'
+  
+[0m14:55:07.901529 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.0 seconds
+[0m14:55:07.902036 [debug] [ThreadPool]: On list_influur_demo_public_marts: ROLLBACK
+[0m14:55:07.902419 [debug] [ThreadPool]: On list_influur_demo_public_marts: Close
+[0m14:55:07.902924 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_influur_demo_public_marts, now list_influur_demo_public_staging)
+[0m14:55:07.904067 [debug] [ThreadPool]: Using postgres connection "list_influur_demo_public_staging"
+[0m14:55:07.904230 [debug] [ThreadPool]: On list_influur_demo_public_staging: BEGIN
+[0m14:55:07.904364 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:55:07.915327 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m14:55:07.915511 [debug] [ThreadPool]: Using postgres connection "list_influur_demo_public_staging"
+[0m14:55:07.915671 [debug] [ThreadPool]: On list_influur_demo_public_staging: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "connection_name": "list_influur_demo_public_staging"} */
+select
+      'influur_demo' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public_staging'
+    union all
+    select
+      'influur_demo' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public_staging'
+    union all
+    select
+      'influur_demo' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public_staging'
+  
+[0m14:55:07.932187 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.0 seconds
+[0m14:55:07.932832 [debug] [ThreadPool]: On list_influur_demo_public_staging: ROLLBACK
+[0m14:55:07.933291 [debug] [ThreadPool]: On list_influur_demo_public_staging: Close
+[0m14:55:07.935827 [debug] [MainThread]: Using postgres connection "master"
+[0m14:55:07.935999 [debug] [MainThread]: On master: BEGIN
+[0m14:55:07.936144 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:55:07.942695 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m14:55:07.942871 [debug] [MainThread]: Using postgres connection "master"
+[0m14:55:07.943080 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m14:55:07.946297 [debug] [MainThread]: SQL status: SELECT 5 in 0.0 seconds
+[0m14:55:07.947286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '399d474a-3013-413c-9860-27892de35e82', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113aea750>]}
+[0m14:55:07.947495 [debug] [MainThread]: On master: ROLLBACK
+[0m14:55:07.947904 [debug] [MainThread]: Using postgres connection "master"
+[0m14:55:07.948043 [debug] [MainThread]: On master: BEGIN
+[0m14:55:07.948694 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m14:55:07.948846 [debug] [MainThread]: On master: COMMIT
+[0m14:55:07.948976 [debug] [MainThread]: Using postgres connection "master"
+[0m14:55:07.949099 [debug] [MainThread]: On master: COMMIT
+[0m14:55:07.949515 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m14:55:07.949649 [debug] [MainThread]: On master: Close
+[0m14:55:07.949967 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:55:07.950167 [info ] [MainThread]: 
+[0m14:55:07.951392 [debug] [Thread-1 (]: Began running node model.influur_viral_agent.stg_influencers
+[0m14:55:07.951650 [info ] [Thread-1 (]: 1 of 5 START sql view model public_staging.stg_influencers ..................... [RUN]
+[0m14:55:07.951980 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_influur_demo_public_staging, now model.influur_viral_agent.stg_influencers)
+[0m14:55:07.952157 [debug] [Thread-1 (]: Began compiling node model.influur_viral_agent.stg_influencers
+[0m14:55:07.955715 [debug] [Thread-1 (]: Writing injected SQL for node "model.influur_viral_agent.stg_influencers"
+[0m14:55:07.956225 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.stg_influencers (compile): 14:55:07.952262 => 14:55:07.956108
+[0m14:55:07.956419 [debug] [Thread-1 (]: Began executing node model.influur_viral_agent.stg_influencers
+[0m14:55:07.972189 [debug] [Thread-1 (]: Writing runtime sql for node "model.influur_viral_agent.stg_influencers"
+[0m14:55:07.972606 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_influencers"
+[0m14:55:07.972782 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_influencers: BEGIN
+[0m14:55:07.972935 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:55:07.987249 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m14:55:07.987481 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_influencers"
+[0m14:55:07.987662 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_influencers: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.stg_influencers"} */
+
+  create view "influur_demo"."public_staging"."stg_influencers__dbt_tmp"
+    
+    
+  as (
+    with source as (
+    select
+        influencer_id,
+        handle,
+        platform,
+        follower_count::bigint,
+        avg_views::bigint,
+        engagement_rate::float,
+        country,
+        language,
+        category,
+        content_style,
+        cost_per_post::numeric,
+        age_bracket
+    from "influur_demo"."public"."raw_influencers"
+)
+
+select * from source
+  );
+[0m14:55:07.997223 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m14:55:08.000564 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_influencers"
+[0m14:55:08.000786 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_influencers: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.stg_influencers"} */
+alter table "influur_demo"."public_staging"."stg_influencers" rename to "stg_influencers__dbt_backup"
+[0m14:55:08.001902 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m14:55:08.003314 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_influencers"
+[0m14:55:08.003491 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_influencers: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.stg_influencers"} */
+alter table "influur_demo"."public_staging"."stg_influencers__dbt_tmp" rename to "stg_influencers"
+[0m14:55:08.004125 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m14:55:08.011410 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_influencers: COMMIT
+[0m14:55:08.011616 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_influencers"
+[0m14:55:08.011772 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_influencers: COMMIT
+[0m14:55:08.013132 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m14:55:08.016249 [debug] [Thread-1 (]: Applying DROP to: "influur_demo"."public_staging"."stg_influencers__dbt_backup"
+[0m14:55:08.018460 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_influencers"
+[0m14:55:08.018645 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_influencers: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.stg_influencers"} */
+drop view if exists "influur_demo"."public_staging"."stg_influencers__dbt_backup" cascade
+[0m14:55:08.021344 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m14:55:08.022046 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.stg_influencers (execute): 14:55:07.956519 => 14:55:08.021949
+[0m14:55:08.022240 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_influencers: Close
+[0m14:55:08.022635 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '399d474a-3013-413c-9860-27892de35e82', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1149823d0>]}
+[0m14:55:08.022955 [info ] [Thread-1 (]: 1 of 5 OK created sql view model public_staging.stg_influencers ................ [[32mCREATE VIEW[0m in 0.07s]
+[0m14:55:08.023254 [debug] [Thread-1 (]: Finished running node model.influur_viral_agent.stg_influencers
+[0m14:55:08.023459 [debug] [Thread-1 (]: Began running node model.influur_viral_agent.stg_posts
+[0m14:55:08.023705 [info ] [Thread-1 (]: 2 of 5 START sql view model public_staging.stg_posts ........................... [RUN]
+[0m14:55:08.024025 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.influur_viral_agent.stg_influencers, now model.influur_viral_agent.stg_posts)
+[0m14:55:08.024195 [debug] [Thread-1 (]: Began compiling node model.influur_viral_agent.stg_posts
+[0m14:55:08.025439 [debug] [Thread-1 (]: Writing injected SQL for node "model.influur_viral_agent.stg_posts"
+[0m14:55:08.025839 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.stg_posts (compile): 14:55:08.024295 => 14:55:08.025743
+[0m14:55:08.026008 [debug] [Thread-1 (]: Began executing node model.influur_viral_agent.stg_posts
+[0m14:55:08.028025 [debug] [Thread-1 (]: Writing runtime sql for node "model.influur_viral_agent.stg_posts"
+[0m14:55:08.028342 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_posts"
+[0m14:55:08.028503 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_posts: BEGIN
+[0m14:55:08.028683 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:55:08.037753 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m14:55:08.037959 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_posts"
+[0m14:55:08.038157 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_posts: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.stg_posts"} */
+
+  create view "influur_demo"."public_staging"."stg_posts__dbt_tmp"
+    
+    
+  as (
+    with source as (
+    select
+        post_id,
+        influencer_id,
+        platform,
+        posted_at::timestamp,
+        caption,
+        views::bigint,
+        likes::bigint,
+        comments::bigint,
+        shares::bigint,
+        audio_type,
+        campaign_tag
+    from "influur_demo"."public"."raw_posts"
+)
+
+select * from source
+  );
+[0m14:55:08.039585 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m14:55:08.041199 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_posts"
+[0m14:55:08.041374 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_posts: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.stg_posts"} */
+alter table "influur_demo"."public_staging"."stg_posts" rename to "stg_posts__dbt_backup"
+[0m14:55:08.041905 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m14:55:08.043150 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_posts"
+[0m14:55:08.043311 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_posts: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.stg_posts"} */
+alter table "influur_demo"."public_staging"."stg_posts__dbt_tmp" rename to "stg_posts"
+[0m14:55:08.043770 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m14:55:08.044651 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_posts: COMMIT
+[0m14:55:08.044895 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_posts"
+[0m14:55:08.045055 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_posts: COMMIT
+[0m14:55:08.045981 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m14:55:08.047179 [debug] [Thread-1 (]: Applying DROP to: "influur_demo"."public_staging"."stg_posts__dbt_backup"
+[0m14:55:08.047548 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.stg_posts"
+[0m14:55:08.047733 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_posts: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.stg_posts"} */
+drop view if exists "influur_demo"."public_staging"."stg_posts__dbt_backup" cascade
+[0m14:55:08.048885 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m14:55:08.049505 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.stg_posts (execute): 14:55:08.026108 => 14:55:08.049407
+[0m14:55:08.049673 [debug] [Thread-1 (]: On model.influur_viral_agent.stg_posts: Close
+[0m14:55:08.050034 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '399d474a-3013-413c-9860-27892de35e82', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114948a50>]}
+[0m14:55:08.050302 [info ] [Thread-1 (]: 2 of 5 OK created sql view model public_staging.stg_posts ...................... [[32mCREATE VIEW[0m in 0.03s]
+[0m14:55:08.050569 [debug] [Thread-1 (]: Finished running node model.influur_viral_agent.stg_posts
+[0m14:55:08.050957 [debug] [Thread-1 (]: Began running node model.influur_viral_agent.fact_post_performance
+[0m14:55:08.051176 [info ] [Thread-1 (]: 3 of 5 START sql view model public_core.fact_post_performance .................. [RUN]
+[0m14:55:08.051510 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.influur_viral_agent.stg_posts, now model.influur_viral_agent.fact_post_performance)
+[0m14:55:08.051695 [debug] [Thread-1 (]: Began compiling node model.influur_viral_agent.fact_post_performance
+[0m14:55:08.052984 [debug] [Thread-1 (]: Writing injected SQL for node "model.influur_viral_agent.fact_post_performance"
+[0m14:55:08.053374 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.fact_post_performance (compile): 14:55:08.051805 => 14:55:08.053278
+[0m14:55:08.053537 [debug] [Thread-1 (]: Began executing node model.influur_viral_agent.fact_post_performance
+[0m14:55:08.056215 [debug] [Thread-1 (]: Writing runtime sql for node "model.influur_viral_agent.fact_post_performance"
+[0m14:55:08.056532 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fact_post_performance"
+[0m14:55:08.056697 [debug] [Thread-1 (]: On model.influur_viral_agent.fact_post_performance: BEGIN
+[0m14:55:08.056850 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:55:08.063963 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m14:55:08.064204 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fact_post_performance"
+[0m14:55:08.064379 [debug] [Thread-1 (]: On model.influur_viral_agent.fact_post_performance: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.fact_post_performance"} */
+
+  create view "influur_demo"."public_core"."fact_post_performance__dbt_tmp"
+    
+    
+  as (
+    select
+    p.post_id,
+    p.influencer_id,
+    p.platform,
+    date_trunc('day', p.posted_at) as post_date,
+    p.views,
+    p.likes,
+    p.comments,
+    p.shares,
+    case
+        when p.views = 0 then 0
+        else (p.likes + p.comments + p.shares)::float / p.views
+    end as engagement_rate,
+    p.audio_type,
+    p.campaign_tag
+from "influur_demo"."public_staging"."stg_posts" p
+  );
+[0m14:55:08.066563 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m14:55:08.068146 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fact_post_performance"
+[0m14:55:08.068337 [debug] [Thread-1 (]: On model.influur_viral_agent.fact_post_performance: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.fact_post_performance"} */
+alter table "influur_demo"."public_core"."fact_post_performance__dbt_tmp" rename to "fact_post_performance"
+[0m14:55:08.068895 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m14:55:08.069607 [debug] [Thread-1 (]: On model.influur_viral_agent.fact_post_performance: COMMIT
+[0m14:55:08.069779 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fact_post_performance"
+[0m14:55:08.069930 [debug] [Thread-1 (]: On model.influur_viral_agent.fact_post_performance: COMMIT
+[0m14:55:08.070711 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m14:55:08.071885 [debug] [Thread-1 (]: Applying DROP to: "influur_demo"."public_core"."fact_post_performance__dbt_backup"
+[0m14:55:08.072257 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fact_post_performance"
+[0m14:55:08.072425 [debug] [Thread-1 (]: On model.influur_viral_agent.fact_post_performance: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.fact_post_performance"} */
+drop view if exists "influur_demo"."public_core"."fact_post_performance__dbt_backup" cascade
+[0m14:55:08.072872 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m14:55:08.073431 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.fact_post_performance (execute): 14:55:08.053633 => 14:55:08.073343
+[0m14:55:08.073612 [debug] [Thread-1 (]: On model.influur_viral_agent.fact_post_performance: Close
+[0m14:55:08.073961 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '399d474a-3013-413c-9860-27892de35e82', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114beb1d0>]}
+[0m14:55:08.074232 [info ] [Thread-1 (]: 3 of 5 OK created sql view model public_core.fact_post_performance ............. [[32mCREATE VIEW[0m in 0.02s]
+[0m14:55:08.074485 [debug] [Thread-1 (]: Finished running node model.influur_viral_agent.fact_post_performance
+[0m14:55:08.074886 [debug] [Thread-1 (]: Began running node model.influur_viral_agent.fct_influencer_features
+[0m14:55:08.075089 [info ] [Thread-1 (]: 4 of 5 START sql view model public_core.fct_influencer_features ................ [RUN]
+[0m14:55:08.075397 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.influur_viral_agent.fact_post_performance, now model.influur_viral_agent.fct_influencer_features)
+[0m14:55:08.075566 [debug] [Thread-1 (]: Began compiling node model.influur_viral_agent.fct_influencer_features
+[0m14:55:08.077036 [debug] [Thread-1 (]: Writing injected SQL for node "model.influur_viral_agent.fct_influencer_features"
+[0m14:55:08.077421 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.fct_influencer_features (compile): 14:55:08.075664 => 14:55:08.077317
+[0m14:55:08.077585 [debug] [Thread-1 (]: Began executing node model.influur_viral_agent.fct_influencer_features
+[0m14:55:08.079416 [debug] [Thread-1 (]: Writing runtime sql for node "model.influur_viral_agent.fct_influencer_features"
+[0m14:55:08.079709 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fct_influencer_features"
+[0m14:55:08.079868 [debug] [Thread-1 (]: On model.influur_viral_agent.fct_influencer_features: BEGIN
+[0m14:55:08.080015 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:55:08.086774 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m14:55:08.087006 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fct_influencer_features"
+[0m14:55:08.087245 [debug] [Thread-1 (]: On model.influur_viral_agent.fct_influencer_features: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.fct_influencer_features"} */
+
+  create view "influur_demo"."public_core"."fct_influencer_features__dbt_tmp"
+    
+    
+  as (
+    with perf as (
+    select
+        influencer_id,
+        avg(views) as avg_views_last_n_posts,
+        avg(engagement_rate) as avg_engagement_last_n_posts,
+        avg(shares)::float as avg_shares,
+        count(*) as post_count
+    from "influur_demo"."public_core"."fact_post_performance"
+    where post_date >= current_date - interval '90 days'
+    group by influencer_id
+),
+
+base as (
+    select
+        i.influencer_id,
+        i.handle,
+        i.platform,
+        i.follower_count,
+        i.avg_views as historical_avg_views,
+        i.engagement_rate as historical_engagement_rate,
+        i.country,
+        i.language,
+        i.category,
+        i.content_style,
+        i.cost_per_post,
+        i.age_bracket,
+        coalesce(p.avg_views_last_n_posts, i.avg_views) as recent_avg_views,
+        coalesce(p.avg_engagement_last_n_posts, i.engagement_rate) as recent_engagement_rate,
+        coalesce(p.post_count, 0) as post_count_last_90d
+    from "influur_demo"."public_staging"."stg_influencers" i
+    left join perf p on i.influencer_id = p.influencer_id
+)
+
+select * from base
+  );
+[0m14:55:08.092774 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m14:55:08.094262 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fct_influencer_features"
+[0m14:55:08.094432 [debug] [Thread-1 (]: On model.influur_viral_agent.fct_influencer_features: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.fct_influencer_features"} */
+alter table "influur_demo"."public_core"."fct_influencer_features__dbt_tmp" rename to "fct_influencer_features"
+[0m14:55:08.094996 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m14:55:08.095721 [debug] [Thread-1 (]: On model.influur_viral_agent.fct_influencer_features: COMMIT
+[0m14:55:08.095879 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fct_influencer_features"
+[0m14:55:08.096023 [debug] [Thread-1 (]: On model.influur_viral_agent.fct_influencer_features: COMMIT
+[0m14:55:08.096921 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m14:55:08.098112 [debug] [Thread-1 (]: Applying DROP to: "influur_demo"."public_core"."fct_influencer_features__dbt_backup"
+[0m14:55:08.098499 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.fct_influencer_features"
+[0m14:55:08.098682 [debug] [Thread-1 (]: On model.influur_viral_agent.fct_influencer_features: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.fct_influencer_features"} */
+drop view if exists "influur_demo"."public_core"."fct_influencer_features__dbt_backup" cascade
+[0m14:55:08.099680 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m14:55:08.100282 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.fct_influencer_features (execute): 14:55:08.077686 => 14:55:08.100178
+[0m14:55:08.100460 [debug] [Thread-1 (]: On model.influur_viral_agent.fct_influencer_features: Close
+[0m14:55:08.100827 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '399d474a-3013-413c-9860-27892de35e82', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115124fd0>]}
+[0m14:55:08.101108 [info ] [Thread-1 (]: 4 of 5 OK created sql view model public_core.fct_influencer_features ........... [[32mCREATE VIEW[0m in 0.03s]
+[0m14:55:08.101416 [debug] [Thread-1 (]: Finished running node model.influur_viral_agent.fct_influencer_features
+[0m14:55:08.101854 [debug] [Thread-1 (]: Began running node model.influur_viral_agent.mart_influencer_recommendations
+[0m14:55:08.102105 [info ] [Thread-1 (]: 5 of 5 START sql table model public_marts.mart_influencer_recommendations ...... [RUN]
+[0m14:55:08.102426 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.influur_viral_agent.fct_influencer_features, now model.influur_viral_agent.mart_influencer_recommendations)
+[0m14:55:08.102599 [debug] [Thread-1 (]: Began compiling node model.influur_viral_agent.mart_influencer_recommendations
+[0m14:55:08.103977 [debug] [Thread-1 (]: Writing injected SQL for node "model.influur_viral_agent.mart_influencer_recommendations"
+[0m14:55:08.104349 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.mart_influencer_recommendations (compile): 14:55:08.102699 => 14:55:08.104248
+[0m14:55:08.104511 [debug] [Thread-1 (]: Began executing node model.influur_viral_agent.mart_influencer_recommendations
+[0m14:55:08.114385 [debug] [Thread-1 (]: Writing runtime sql for node "model.influur_viral_agent.mart_influencer_recommendations"
+[0m14:55:08.114784 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.mart_influencer_recommendations"
+[0m14:55:08.114960 [debug] [Thread-1 (]: On model.influur_viral_agent.mart_influencer_recommendations: BEGIN
+[0m14:55:08.115117 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:55:08.122761 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m14:55:08.123018 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.mart_influencer_recommendations"
+[0m14:55:08.123219 [debug] [Thread-1 (]: On model.influur_viral_agent.mart_influencer_recommendations: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.mart_influencer_recommendations"} */
+
+  
+    
+
+  create  table "influur_demo"."public_marts"."mart_influencer_recommendations__dbt_tmp"
+  
+  
+    as
+  
+  (
+    with features as (
+    select * from "influur_demo"."public_core"."fct_influencer_features"
+),
+
+scored as (
+    select
+        influencer_id,
+        handle,
+        platform,
+        follower_count,
+        country,
+        language,
+        category,
+        content_style,
+        cost_per_post,
+        age_bracket,
+        recent_avg_views,
+        recent_engagement_rate,
+        post_count_last_90d,
+        (
+            0.4 * (log(greatest(recent_avg_views, 1))) +
+            0.4 * (recent_engagement_rate * 100) +
+            0.2 * log(greatest(post_count_last_90d + 1, 1))
+        ) as virality_score
+    from features
+)
+
+select * from scored
+  );
+  
+[0m14:55:08.151202 [debug] [Thread-1 (]: SQL status: SELECT 200 in 0.0 seconds
+[0m14:55:08.152830 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.mart_influencer_recommendations"
+[0m14:55:08.153006 [debug] [Thread-1 (]: On model.influur_viral_agent.mart_influencer_recommendations: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.mart_influencer_recommendations"} */
+alter table "influur_demo"."public_marts"."mart_influencer_recommendations" rename to "mart_influencer_recommendations__dbt_backup"
+[0m14:55:08.153913 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m14:55:08.155263 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.mart_influencer_recommendations"
+[0m14:55:08.155445 [debug] [Thread-1 (]: On model.influur_viral_agent.mart_influencer_recommendations: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.mart_influencer_recommendations"} */
+alter table "influur_demo"."public_marts"."mart_influencer_recommendations__dbt_tmp" rename to "mart_influencer_recommendations"
+[0m14:55:08.156160 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m14:55:08.159790 [debug] [Thread-1 (]: On model.influur_viral_agent.mart_influencer_recommendations: COMMIT
+[0m14:55:08.159970 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.mart_influencer_recommendations"
+[0m14:55:08.160123 [debug] [Thread-1 (]: On model.influur_viral_agent.mart_influencer_recommendations: COMMIT
+[0m14:55:08.161022 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m14:55:08.162384 [debug] [Thread-1 (]: Applying DROP to: "influur_demo"."public_marts"."mart_influencer_recommendations__dbt_backup"
+[0m14:55:08.163836 [debug] [Thread-1 (]: Using postgres connection "model.influur_viral_agent.mart_influencer_recommendations"
+[0m14:55:08.164022 [debug] [Thread-1 (]: On model.influur_viral_agent.mart_influencer_recommendations: /* {"app": "dbt", "dbt_version": "1.7.19", "profile_name": "influur_viral_agent", "target_name": "dev", "node_id": "model.influur_viral_agent.mart_influencer_recommendations"} */
+drop table if exists "influur_demo"."public_marts"."mart_influencer_recommendations__dbt_backup" cascade
+[0m14:55:08.167262 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m14:55:08.167982 [debug] [Thread-1 (]: Timing info for model.influur_viral_agent.mart_influencer_recommendations (execute): 14:55:08.104653 => 14:55:08.167883
+[0m14:55:08.168169 [debug] [Thread-1 (]: On model.influur_viral_agent.mart_influencer_recommendations: Close
+[0m14:55:08.168536 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '399d474a-3013-413c-9860-27892de35e82', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115188ad0>]}
+[0m14:55:08.168813 [info ] [Thread-1 (]: 5 of 5 OK created sql table model public_marts.mart_influencer_recommendations . [[32mSELECT 200[0m in 0.07s]
+[0m14:55:08.169066 [debug] [Thread-1 (]: Finished running node model.influur_viral_agent.mart_influencer_recommendations
+[0m14:55:08.169730 [debug] [MainThread]: Using postgres connection "master"
+[0m14:55:08.169902 [debug] [MainThread]: On master: BEGIN
+[0m14:55:08.170047 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:55:08.176462 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m14:55:08.176649 [debug] [MainThread]: On master: COMMIT
+[0m14:55:08.176783 [debug] [MainThread]: Using postgres connection "master"
+[0m14:55:08.176906 [debug] [MainThread]: On master: COMMIT
+[0m14:55:08.177293 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m14:55:08.177435 [debug] [MainThread]: On master: Close
+[0m14:55:08.177762 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:55:08.178044 [debug] [MainThread]: Connection 'model.influur_viral_agent.mart_influencer_recommendations' was properly closed.
+[0m14:55:08.178230 [info ] [MainThread]: 
+[0m14:55:08.178392 [info ] [MainThread]: Finished running 4 view models, 1 table model in 0 hours 0 minutes and 0.38 seconds (0.38s).
+[0m14:55:08.178869 [debug] [MainThread]: Command end result
+[0m14:55:08.182775 [info ] [MainThread]: 
+[0m14:55:08.182959 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:55:08.183111 [info ] [MainThread]: 
+[0m14:55:08.183265 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m14:55:08.185743 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.63770306, "process_user_time": 1.149121, "process_kernel_time": 0.151595, "process_mem_max_rss": "126812160", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:55:08.186060 [debug] [MainThread]: Command `dbt run` succeeded at 14:55:08.186006 after 0.64 seconds
+[0m14:55:08.186251 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104aee0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113b74b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1134a6f90>]}
+[0m14:55:08.186434 [debug] [MainThread]: Flushing usage events

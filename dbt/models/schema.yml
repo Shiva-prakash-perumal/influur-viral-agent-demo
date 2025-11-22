@@ -1,0 +1,29 @@
+version: 2
+
+sources:
+  - name: raw
+    database: influur_demo
+    schema: public
+    tables:
+      - name: raw_influencers
+      - name: raw_posts
+
+models:
+  - name: stg_influencers
+    description: "Staging view for raw influencers"
+    columns:
+      - name: influencer_id
+        tests:
+          - not_null
+          - unique
+  - name: stg_posts
+    description: "Staging view for raw posts"
+    columns:
+      - name: post_id
+        tests:
+          - not_null
+          - unique
+  - name: fct_influencer_features
+    description: "Aggregated influencer features for virality planning"
+  - name: mart_influencer_recommendations
+    description: "Scored influencer mart used by the mini viral agent"

@@ -1,0 +1,11 @@
+influur_viral_agent:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: influur
+      password: influur
+      port: 5432
+      dbname: influur_demo
+      schema: public
