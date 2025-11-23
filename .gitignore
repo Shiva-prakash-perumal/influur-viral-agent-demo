@@ -50,5 +50,3 @@ build/
 .cache/
 .mypy_cache/
 .pytest_cache/
-
-README.md
