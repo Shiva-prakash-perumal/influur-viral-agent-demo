@@ -78,7 +78,7 @@ influur-viral-agent-demo/
   README.md
   .gitignore
   .env.example
-  docker-compose.yml        # optional if you prefer Docker over Podman
+  docker-compose.yml        
   requirements.txt
 
   data/
@@ -167,13 +167,6 @@ These schemas mimic the kind of signals a viral agent would learn from.
     - all influencer metadata needed for targeting
     - features from `fct_influencer_features`
     - computed `virality_score`:
-
-      ```sql
-      0.4 * log(greatest(recent_avg_views, 1))
-    + 0.4 * (recent_engagement_rate * 100)
-    + 0.2 * log(greatest(post_count_last_90d + 1, 1))
-      ```
-
   - dbt places this in schema `public_marts`, and the FastAPI layer maps it via SQLAlchemy.
 
 ---
@@ -182,7 +175,6 @@ These schemas mimic the kind of signals a viral agent would learn from.
 
 The `virality_score` is a **simple, hand-tuned heuristic** designed to be:
 
-- easy to explain in an interview
 - stable and numerically well-behaved
 - aligned with common influencer marketing intuition.
 
@@ -212,7 +204,7 @@ Weights:
 - 40%: engagement (percentage)
 - 20%: recency/consistency
 
-In a real system you would validate and eventually replace this heuristic with a learned model that better predicts downstream KPIs (e.g., cost-per-view, conversions, track “break” probability). dbt remains the place where such a model’s outputs are exposed as a mart for the agent to consume.
+In a real system, you would validate and eventually replace this heuristic with a learned model that better predicts downstream KPIs (e.g., cost-per-view, conversions, track “break” probability). dbt remains the place where such a model’s outputs are exposed as a mart for the agent to consume.
 
 ---
 
@@ -234,15 +226,13 @@ Script: `pipelines/build_embeddings.py`
     ```
 
 Runtime:
-
 - `service/embeddings_store.py` loads this file into an `EmbeddingsStore`.
 - The core method:
 
   ```python
   get_lookalike_by_influencer(influencer_id, top_k)
   ```
-
-  returns nearest neighbors in embedding space as `(influencer_id, similarity)` pairs.
+returns nearest neighbors in embedding space as `(influencer_id, similarity)` pairs.
 
 This provides a basic foundation for “find creators that feel like this one” and can be extended with extra constraints (regions, pricing, brand safety) as needed.
 
@@ -282,11 +272,11 @@ File: `service/main.py`
 
     ```json
     {
-      "objective": "Test campaign",
-      "target_country": null,
-      "target_language": null,
-      "category": null,
-      "platform": null,
+      "objective": "Break a new education creator on YouTube in the US",
+      "target_country": "US",
+      "target_language": "en",
+      "category": "education",
+      "platform": "youtube",
       "budget": 10000,
       "desired_influencer_count": 10
     }
@@ -305,7 +295,6 @@ File: `service/main.py`
   - Response: list of `{ "influencer_id": ..., "handle": "...", "similarity": ... }`.
 
 Together these endpoints show how a viral agent could:
-
 - move from a structured brief + budget → concrete influencer set
 - expand that set with content-similar creators using embeddings.
 
@@ -521,7 +510,7 @@ You should see:
 
 ## Next Steps / Extensions
 
-Some natural extensions if you want to evolve this closer to a production “viral agent”:
+Some natural extensions to evolve this closer to a production “viral agent”:
 
 - Incorporate real campaign outcome signals and feedback loops into the mart.
 - Replace the heuristic virality score with a learned model (e.g., expected uplift / cost-per-view).
@@ -535,5 +524,5 @@ Some natural extensions if you want to evolve this closer to a production “vir
   - iterates on the plan, and
   - returns a final proposal + rationale.
 
-Even as a small demo, the project follows patterns that scale:  
+This project follows patterns that scale:  
 **dbt defines the data contract, the mart is the product, and the service/agent uses that product to plan campaigns.**
