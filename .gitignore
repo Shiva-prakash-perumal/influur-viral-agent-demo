@@ -26,10 +26,6 @@ ENV/
 # --- Environment / secrets ---
 .env
 .env.*.local
-
-# --- Data (generated) ---
-data/raw/*.csv
-data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 
