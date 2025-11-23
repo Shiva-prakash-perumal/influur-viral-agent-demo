@@ -13,6 +13,18 @@ This repo shows how to go from:
 
 It’s intentionally small, but uses real tools you’d use in production: Postgres, dbt, FastAPI, SentenceTransformers.
 
+## Table of Contents
+
+- [System & Tech Stack Overview](#system--tech-stack-overview)
+- [Project Structure](#project-structure)
+- [Data Model](#data-model)
+- [Virality Score Rationale](#virality-score-rationale)
+- [Embeddings and Lookalikes](#embeddings-and-lookalikes)
+- [Planner and API Design](#planner-and-api-design)
+- [Tech Stack and Trade-offs](#tech-stack-and-trade-offs)
+- [Running the Project](#running-the-project)
+- [Next Steps / Extensions](#next-steps--extensions)
+
 ---
 
 ## System & Tech Stack Overview
@@ -471,11 +483,11 @@ In Swagger, open `POST /plan_campaign` → **Try it out** and use:
 
 ```json
 {
-  "objective": "Test campaign",
-  "target_country": null,
-  "target_language": null,
-  "category": null,
-  "platform": null,
+  "objective": "Break a new education creator on YouTube in the US",
+  "target_country": "US",
+  "target_language": "en",
+  "category": "education",
+  "platform": "youtube",
   "budget": 10000,
   "desired_influencer_count": 10
 }
