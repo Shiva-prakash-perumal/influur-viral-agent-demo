@@ -1,0 +1,54 @@
+# --- OS / Editor junk ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+*.log
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# --- Environment / secrets ---
+.env
+.env.*.local
+
+# --- Data (generated) ---
+data/raw/*.csv
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# --- dbt artifacts ---
+dbt/target/
+dbt/logs/
+dbt/.user.yml
+
+# --- Containers / compose ---
+*.pid
+
+# --- FastAPI / Uvicorn run artifacts ---
+*.sqlite3
+
+# --- Misc build / cache ---
+dist/
+build/
+.cache/
+.mypy_cache/
+.pytest_cache/
+
+README.md
