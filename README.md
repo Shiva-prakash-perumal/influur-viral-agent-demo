@@ -4,9 +4,9 @@ Mini end-to-end prototype of the **data + planning layer** behind an influencer 
 
 This repo shows how to go from:
 
-- raw creator and post performance data →
-- dbt models that compute a **virality score** and serving mart →
-- an **embeddings-based lookalike store** →
+- raw creator and post-performance data
+- dbt models that compute a **virality score** and serving mart
+- an **embeddings-based lookalike store**
 - a small **FastAPI service** that can:
   - plan a campaign under a budget
   - return lookalike influencers by content style
